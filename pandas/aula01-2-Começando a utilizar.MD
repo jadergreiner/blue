@@ -31,3 +31,16 @@ Um DataFrame é uma estrutura de dados bidimensional que pode armazenar dados de
 A tabela tem 3 colunas, cada uma delas com um rótulo de coluna. Os rótulos da coluna são, respectivamente: Name, Age, Sex.
 
 No software de planilha, a representação da tabela de nossos dados seria muito semelhante:
+
+<img src="./img/01_table_spreadsheet.png" align="middle">
+
+## Trabalhando com subconjuntos
+
+E se quisermos trabalhar com os dados da coluna Age
+
+~~~
+df["Age"]
+~~~
+
+Ao selecionar uma única coluna de um DataFrame pandas, o resultado é uma série pandas. Para selecionar a coluna, use o rótulo da coluna entre os colchetes. 
+
