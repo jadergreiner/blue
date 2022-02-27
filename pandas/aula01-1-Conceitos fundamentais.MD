@@ -2,6 +2,7 @@
 
 Biblioteca mais utilizada para análise e manipulação de dados. 
 
+Documentação oficial: https://pandas.pydata.org/pandas-docs/stable/index.html#
 
 
 O dia a a dia de um profissional da área de dados consiste em coletar informações, armazenar, manipular e analisar os dados. E como veremos no decorrer da aula, esta bibliotea é perfeita para estes trabalhos.
