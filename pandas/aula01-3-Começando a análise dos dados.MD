@@ -68,8 +68,7 @@ df = df.append(
   ~~~
   
   Seja curioso! Navegue pela documentação a aprenda mais. :point_down:
-  https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.reset_index.html#pandas.DataFrame.reset_index
   
-
-Vamos conhecer outros métodos de análise e estatística.
+  https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.reset_index.html#pandas.DataFrame.reset_index
+ 
 
