@@ -56,6 +56,20 @@ df = df.append(
     )
   )
   ~~~
+  
+  Visualizando os dados novamente, agora sim estamos com os dados completos. 
+  
+  Mas se você prestar atenção, olha como ficou nosso índice.
+  
+  Existem várias formas de organizar os índices, vale procurar um pouco na documentação. Usaremos o método de resetar.
+  
+  ~~~
+  df = df.reset_index()
+  ~~~
+  
+  Seja curioso! Navegue pela documentação a aprenda mais. :point_down:
+  https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.reset_index.html#pandas.DataFrame.reset_index
+  
 
 Vamos conhecer outros métodos de análise e estatística.
 
