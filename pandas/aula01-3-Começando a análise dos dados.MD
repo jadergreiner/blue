@@ -17,3 +17,45 @@ df.describe()
 O método describe() fornece uma visão geral rápida dos dados numéricos. Como algumas colunas são dados textuais, estes são por padrão não levados em conta pelo método describe().
 
 Este é apenas um ponto de partida. Semelhante ao software de planilha, os pandas representam dados como uma tabela com colunas e linhas. Além da representação, também as manipulações de dados e cálculos que você faria em software de planilha são suportados por pandas. 
+
+Vamos adicionar novos dados ao nosso Dataframe?
+
+~~~
+df.append(
+      pd.DataFrame(
+          {
+              "Name" : ["McCarthy, Mr. Timothy J",
+                        "Heikkinen, Miss. Laina"
+              ],
+              "Age" : [54,26],
+              "Sex" : ["male", "female"]
+        }
+    )
+~~~
+
+Vamos visualizar nosso Dataframe? 
+~~~
+df
+~~~
+
+Cadê nossas informações? 
+
+Acontece que nossos função criou o objeto em "memória". Não salvamos dentro de um Dataframe. Neste caso, vamos salvar os dados dentro do mesmo Dataframe.
+O novo código ficará assim:
+
+~~~
+df = df.append(
+      pd.DataFrame(
+          {
+              "Name" : ["McCarthy, Mr. Timothy J",
+                        "Heikkinen, Miss. Laina"
+              ],
+              "Age" : [54,26],
+              "Sex" : ["male", "female"]
+        }
+    )
+  )
+  ~~~
+
+Vamos conhecer outros métodos de análise e estatística.
+
