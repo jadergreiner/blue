@@ -55,3 +55,67 @@ Podemos aplicar um filtro no index.
 ~~~
 df["index"].count()
 ~~~
+
+Agora vamos criar novos Dataframes a partir do principal? Com algumas estatísticas!
+
+Primeiro filtro do sexo feminino.
+~~~
+filtro = df['Sex'] == 'female'
+~~~
+
+Agora vamos criar um Dataframa armazendo os dados de sexo feminino
+
+~~~
+df_feminimo = df[filtro]
+~~~
+
+Qual a idade máxima, mínima e média do sexo feminino?
+
+O Pandas já tem os métodos prontos pra gente. 
+
+Idade máxima
+~~~
+df_feminimo["Age"].max()
+~~~
+
+Idade mínima
+~~~
+df_feminimo["Age"].min()
+~~~
+
+Idade média
+~~~
+df_feminimo["Age"].mean()
+~~~
+
+Vamos repetir para os dados do sexo masculino? Dica, vamos iniciar alterando o filtro.
+
+~~~
+filtro = df['Sex'] == 'male'
+~~~
+
+Criando nosso Dataframa com os dados de sexo masculino
+
+~~~
+df_masculino = df[filtro]
+~~~
+
+Idade máxima
+~~~
+df_masculino["Age"].max()
+~~~
+
+Idade mínima
+~~~
+df_masculino["Age"].min()
+~~~
+
+Idade média
+~~~
+df_masculino["Age"].mean()
+~~~
+
+E aí! Conseguiu acompanhar? 
+Fique de olho na ordem dos filtros, usamos o mesmo nome para criar os dois Dataframes.
+
+Terminamos por aqui nossa primeira aula! Está gostando? Pois é só o começo desta poderosa ferramenta Pandas.
