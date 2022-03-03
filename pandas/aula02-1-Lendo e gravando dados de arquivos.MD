@@ -36,6 +36,7 @@ Muito simples, não é verdade?
 O Pandas permite esta interação entre diversos formatos, tanto de leitura quanto a exportação, como fizemos agora, mudando apenas o sufixo.
 
 Fica o convite para interagir com outros formatos.
+
 <img src="./img/readwrite.svg" align="middle">
 
 
