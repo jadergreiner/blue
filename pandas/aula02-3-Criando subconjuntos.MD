@@ -92,6 +92,31 @@ class_23_new = titanic[(titanic["Pclass"] == 2) | (titanic["Pclass"] == 3)]
 class_23_new.head()
 ~~~
 
+E se quisermos selecionar apenas os dados aonde a idade do passageiro foi informada ❓
 
+~~~
+age_no_na = titanic[titanic["Age"].notna()]
+age_no_na.head()
+~~~
 
+Incluindo o <code>notna()</code> retorna <code>True</code> apenas nos valores que não sejam nulos. Aplicamos esta condição dentro dos colchetes no Dataframe principal.
+
+Vamos analisar nosso conjunto com os dados de idade informados.
+
+~~~
+age_no_na.shape
+~~~
+
+Olha que interessante! Nosso conjunto tem apenas 714 linhas. De forma prática e rápida
+
+:triangular_flag_on_post: Dados não informados são conhecidos como "MISSING DATA". Dependendo do projeto, exigirá um tratamento e não poderão simplesmente serem descartados como fizemos aqui. 
+
+### Como selecionar linhas e colunas específicas ❓
+
+Vamos filtrar um subconjunto apenas com o nome dos passageiros com mais de 30 anos
+
+~~~
+adult_names = titanic.loc[titanic["Age"] > 30, "Name"]
+adult_names.head()
+~~~
 
