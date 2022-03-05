@@ -120,3 +120,12 @@ adult_names = titanic.loc[titanic["Age"] > 30, "Name"]
 adult_names.head()
 ~~~
 
+Neste caso, um subconjunto de linhas e colunas feito de uma só vez, usar apenas colchetes de seleção não é mais suficiente. Os operadores ('loc', 'iloc') são necessários em frente aoscolchetes. Ao usa-los, a parte antes da vírgula são as linhas desejadas (neste caso, aquelas aonde a idade está acima de 30) e a parte após a círgula são as colunas que você deseja selecionar.
+
+Vamos filtrar mais especificamente agora. Vamos retornar a linha 10 a 25 e das colunas 3 até a 5.
+
+~~~
+titanic.iloc[9:25, 2:5]
+~~~
+
+Novamente, um subconjunto linhas e colunas feito de uma só vez, apenas usar colchetes não é mais suficiente. Quando estiver especificamente interessado em determinadas linhas e/ou colunas com base em sua posição na tabela, use o operador <code>iloc</code> em frente aos colchetes.
