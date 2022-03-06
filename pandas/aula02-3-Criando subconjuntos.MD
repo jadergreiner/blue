@@ -129,3 +129,16 @@ titanic.iloc[9:25, 2:5]
 ~~~
 
 Novamente, um subconjunto linhas e colunas feito de uma só vez, apenas usar colchetes não é mais suficiente. Quando estiver especificamente interessado em determinadas linhas e/ou colunas com base em sua posição na tabela, use o operador <code>iloc</code> em frente aos colchetes.
+
+A principal diferença entre o <code>loc[]</code> e o <code>iloc[]</code> está na forma de montar a busca. 
+
+Ao usar o <code>loc[]</code> espera-se o rótulo do dado(nome). Já no <code>iloc[]</code> é a posição da linha ou coluna (índice).
+
+Ao selecionar linhas e/ou colunas específicas, usando por exemplo o <code>iloc[]</code>, novos valores podem ser atribuídos. Olha neste exemplo, aonde iremos selecionar as três primeiras linhas e vamos atribuir um nome a coluna 3('name').
+
+~~~
+titanic.iloc[0:3, 3] = 'Blue'
+titanic.head()
+~~~
+
+Entendeu o código acima? Lembre que os índices do pandas iniciam em '0'.
