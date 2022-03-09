@@ -1,4 +1,11 @@
-# Exercícios da aula 01
+# Aula 17 - [CODELAB] Introdução ao Pandas - Parte 1
+
+Vamos colocar em prática o aprendizado? Bom laboratório.
+
+Explore a documentação oficial e todo o conteúdo disponibilziado pela comunidade na Internet. Não fique preso as atividades propostas, crie outros conjuntos, novas colunas. 
+
+
+## Exercícios
 
 1. Faça a importação do módulo Pandas
 2. Crie um Dataframe com as séries: Nome, Idade, prato favorito. Preencha com seus dados e da sua família. Fique a vontade para adicionar novas colunas.
