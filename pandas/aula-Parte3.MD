@@ -8,7 +8,7 @@
 * Agregar estatística por categoria (group by)
 * Contar registros por categoria
 * Reordenando o layout das tabelas
-* Criando novos dataframes com filtro de dados
+* Atividades de revisão
 
 
 ## Criar novas colunas a partir de colunas existentes
@@ -204,10 +204,28 @@ titanic.sort_values(by=['Pclass', 'Age'], ascending=False).head()
 
 Para saber mais sobre a ordenação de dados, visite a documentação https://pandas.pydata.org/pandas-docs/stable/user_guide/basics.html#basics-sorting
 
-## Criando novos dataframes com filtro de dados
+## Atvidades de revisão
 
-Voltamos ao dataset de qualidade do ar ❗
+Estamos chegando na reta final do nosso módulo! Claro que temos temos muito mais para aprender, olhe a documentação oficial, pratique as atividades, tente refazer todos os exemplos que colocamos no longo da aula sem o código. Lembre-se, a prática que leva a perfeição!
 
-Vamos criar um pequeno subconjunto do conjunto de dados de qualidade do ar. Vamos filtar os dados de NO2 e apenas as duas primeiras medições de cada local. O subconjunto de dados será chamado no2_subset
+Proponho estes exercícios, para realizarmos na aula como atividades de revisão.
+
+1. Crie um dataframe com os dados dos colegas da turma;
+2. O dataframe deve conter no mínimo o nome, a idade, o estado e o sexo;
+3. Usando tudo o que aprendemos nas aulas, responda:
+    a) Quantidade de alunos?
+    b) Quantidade de alunos por estado?
+    c) Quantidade de alunos por sexo?
+    d) Quantidade de alunos por estado e sexo?
+    e) Qual a idade media dos alunos?
+    f) Qual a idade media dos alunos por estado?
+    g) Qual a idade media dos alunos por sexo?
+    g) Qual a maior e a menor idade por sexo de nossa turma?
+4. Plotar um gráfico de barras de quantidade de alunos por estado
+5. Criatividade! Vamos criar uma nova coluna com o nome Faixa etaria. Vamos classificar os alunos por faixa etaria e salvar nesta coluna. 
+6. Valor plotar um gráfico por faixa etária.
+
+
+
 
 
