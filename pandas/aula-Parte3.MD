@@ -139,4 +139,21 @@ titanic[["Sex", "Age"]].groupby("Sex").mean()
 Como desejamos a idade média de cada gênero, primeiro montamos um subconjunto com estas duas colunas. Após, o método <code>groupby()</code> é aplicado na coluna para fazer um grupo por categoria de forma automática. Não importa o número de categorias, o método vai criar um novo agrupamento cada vez que encontrar um novo rótulo. 
 
 
+Vamos ver outras formas bem interessantes de olhar os dados agrupados. 
+Vamos agrupar os dados antes e depois vamos aplicar uma estatística neles.
 
+~~~
+titanic.groupby("Sex").mean()
+~~~
+
+Um dos pápeis de análise de dados é interpretar os dados. Concorda que não faz muito sentido obter uma média da coluna <code>Pclass[]</code> ❓
+
+Mas se quisermos a média de idade dos passageiros por sexo, podemos filtar com os colchetes após a agregação.
+
+~~~
+titanic.groupby("Sex")["Age"].mean()
+~~~
+
+Percebeu que o resultado é o mesmo que realizamos antes? Qual a forma correta?
+
+Fica para discussão em aula. Quero ouvir sua opinião!
