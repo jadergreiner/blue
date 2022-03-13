@@ -5,6 +5,7 @@
 * Criar novas colunas a partir de colunas existentes
 * Renomar colunas
 * Calculando estatísticas
+* Agregar estatística por categoria (group by)
 
 
 ## Criar novas colunas a partir de colunas existentes
@@ -80,5 +81,62 @@ air_quality_renamed.head()
 :point_right: Material complementar sobre a renomeação de rótulos de coluna ou linha na documentação oficial https://pandas.pydata.org/pandas-docs/stable/user_guide/basics.html#basics-rename
 
 ## Calculando estatísticas
+
+Para melhorar nossa didática e compreensão, vamos retomar a análise em nosso dataframe Titanic.
+
+
+~~~
+titanic = pd.read_csv("data/titanic.csv")
+
+titanic.head()
+~~~
+
+Qual a idade média dos passageiros ❓
+
+~~~
+titanic["Age"].mean()
+~~~
+
+Diversas estatísticas estão disponíveis e podem ser aplicadas em colunas com dados numéricos. As operações em geral excluem dados perdidos e operam em linhas por padrão.
+
+Qual a idade média dos passageiros e qual o valor médio das tarifas?
+
+~~~
+titanic[["Age", "Fare"]].median()
+~~~
+
+📌 Ao aplicar estatística a várias colunas, o resultado retorna um objeto DataFrame.
+
+Podemos calcular estatísticas sumarizadas para várias colunas ao mesmo tempo. Lembra-se do <code>describe()</code> que olhamos nas primriras aulas.
+
+~~~
+titanic[["Age", "Fare"]].describe()
+~~~
+
+E podemos customizar nossas estatísicas. Ao invés de usar as pré-definidas, podemos agregar combinações específicas usando o método <code>agg()</code>
+
+~~~
+titanic.agg(
+    {
+        "Age": ["min", "max", "median", "skew"],
+        "Fare": ["min", "max", "median", "mean"],
+    }
+)
+~~~
+
+Material complementar de estatística descritiva ➡️ https://pandas.pydata.org/pandas-docs/stable/user_guide/basics.html#basics-stats
+
+## Agregar estatística por categoria (group by)
+
+Qual a idade média dos passageiros femininos e masculinos do Tinanic ❓
+
+Sim, eu sei que você já sabe calcular individualizado! Mas quero te apresentar a agregação de resultados do Pandas ❗
+
+~~~
+titanic[["Sex", "Age"]].groupby("Sex").mean()
+~~~
+
+Como desejamos a idade média de cada gênero, primeiro montamos um subconjunto com estas duas colunas. Após, o método <code>groupby()</code> é aplicado na coluna para fazer um grupo por categoria de forma automática. Não importa o número de categorias, o método vai criar um novo agrupamento cada vez que encontrar um novo rótulo. 
+
 
 
