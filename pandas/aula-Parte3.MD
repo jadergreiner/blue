@@ -47,3 +47,5 @@ air_quality.head()
 Novamente usamos o **element_wise**, calculando a divisão sobre duas colunas.
 
 Imagino que já tenha percebido o potencial desta biblioteca! Podemos usar os operadores matemáticos (+, -, *, /) ou operadores lógicos (<, >, =, ...) junto com expressões condicionais. Fica o convite para brincar um pouco 😉
+
+Como um material complementar, se precisar de algo mais avançado, pode usar o arbitrary Python com <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.apply.html#pandas.DataFrame.apply" target="_blank"><code>apply()</code> </a>.
