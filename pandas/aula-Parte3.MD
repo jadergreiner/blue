@@ -6,6 +6,9 @@
 * Renomar colunas
 * Calculando estatísticas
 * Agregar estatística por categoria (group by)
+* Contar registros por categoria
+* Reordenando o layout das tabelas
+* Criando novos dataframes com filtro de dados
 
 
 ## Criar novas colunas a partir de colunas existentes
@@ -168,3 +171,43 @@ titanic.groupby(["Sex", "Pclass"])["Fare"].mean()
 ~~~
 
 Agora fez mais sentido trazer a cabine para a análise. O agrupamento pode ser feito com várias colunas ao mesmo tempo. Informe o nome das colunas como uma lista no <code>groupby()</code> .
+
+## Contar registros por categoria
+
+Qual o número de passageiros em cada uma das classes ❓
+
+~~~
+titanic["Pclass"].value_counts()
+~~~
+
+O método <code>value_counts()</code> conta o número de registros de cada categoria em uma coluna.
+
+A função é um atalho. Ela faz uma operação de agregação e combina com a contagem do número de registros dentro do grupo
+
+~~~
+titanic.groupby("Pclass")["Pclass"].count()
+~~~
+
+## Reordenando o layout das tabelas
+
+Vamos classificar os dados do Titanic de acordo com a idade dos passageiros
+
+~~~
+titanic.sort_values(by="Age").head()
+~~~
+
+Vamos classificar os dados de acordo com a Classe da Cabine e a idade em ordem descrecente
+
+~~~
+titanic.sort_values(by=['Pclass', 'Age'], ascending=False).head()
+~~~
+
+Para saber mais sobre a ordenação de dados, visite a documentação https://pandas.pydata.org/pandas-docs/stable/user_guide/basics.html#basics-sorting
+
+## Criando novos dataframes com filtro de dados
+
+Voltamos ao dataset de qualidade do ar ❗
+
+Vamos criar um pequeno subconjunto do conjunto de dados de qualidade do ar. Vamos filtar os dados de NO2 e apenas as duas primeiras medições de cada local. O subconjunto de dados será chamado no2_subset
+
+
