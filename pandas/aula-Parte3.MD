@@ -146,8 +146,6 @@ Vamos agrupar os dados antes e depois vamos aplicar uma estatística neles.
 titanic.groupby("Sex").mean()
 ~~~
 
-Um dos pápeis de análise de dados é interpretar os dados. Concorda que não faz muito sentido obter uma média da coluna <code>Pclass[]</code> ❓
-
 Mas se quisermos a média de idade dos passageiros por sexo, podemos filtar com os colchetes após a agregação.
 
 ~~~
@@ -157,3 +155,16 @@ titanic.groupby("Sex")["Age"].mean()
 Percebeu que o resultado é o mesmo que realizamos antes? Qual a forma correta?
 
 Fica para discussão em aula. Quero ouvir sua opinião!
+
+Um dos pápeis de análise de dados é interpretar os dados. Concorda que não faz muito sentido obter uma média da coluna <code>Pclass[]</code> ❓
+
+A coluna contém dados numéricos, mas na verdade representa 3 categorias (ou fatores) com, respectivamente, os rótulos '1', '2' e '3'. Calcular estatísticas sobre isso não faz muito sentido. Portanto, o pandas fornece um tipo de dados para lidar com esse tipo de dados. 
+Dica de material complementar sobre dados categóricos https://pandas.pydata.org/pandas-docs/stable/user_guide/categorical.html#categorical
+
+Agora assim! Qual é o preço médio da passagem para cada uma das combinações de sexo e classe por cabine?
+
+~~~
+titanic.groupby(["Sex", "Pclass"])["Fare"].mean()
+~~~
+
+Agora fez mais sentido trazer a cabine para a análise. O agrupamento pode ser feito com várias colunas ao mesmo tempo. Informe o nome das colunas como uma lista no <code>groupby()</code> .
