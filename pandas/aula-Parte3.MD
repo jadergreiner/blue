@@ -3,7 +3,8 @@
 ## Conteúdos
 
 * Criar novas colunas a partir de colunas existentes
-*
+* Renomar colunas
+* Calculando estatísticas
 
 
 ## Criar novas colunas a partir de colunas existentes
@@ -49,3 +50,35 @@ Novamente usamos o **element_wise**, calculando a divisão sobre duas colunas.
 Imagino que já tenha percebido o potencial desta biblioteca! Podemos usar os operadores matemáticos (+, -, *, /) ou operadores lógicos (<, >, =, ...) junto com expressões condicionais. Fica o convite para brincar um pouco 😉
 
 Como um material complementar, se precisar de algo mais avançado, pode usar o arbitrary Python com <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.apply.html#pandas.DataFrame.apply" target="_blank"><code>apply()</code> </a>.
+
+## Renomar colunas
+
+Vamos renomar as colunas com os identificadores de estação correspondentes utilizados pelo openAQ
+
+~~~
+air_quality_renamed = air_quality.rename(
+    columns={
+        "station_antwerp": "BETR801",
+        "station_paris": "FR04014",
+        "station_london": "London Westminster",
+    }
+)
+
+air_quality_renamed.head()
+~~~
+
+A função <code>rename()</code> pode ser usada para renomear nome de linhas ou colunas. Sua sintaxe funciona através de um dicionário(chave-valor), informamos o nome atual na chave o novo nome como valor.
+
+O mapeamento não está restrito apenas a nomes fixos, mas também pode ser uma função. Por exemplo, a conversão dos nomes das colunas em letras minúsculas também pode ser feita usando uma função:
+
+~~~
+air_quality_renamed = air_quality_renamed.rename(columns=str.lower)
+
+air_quality_renamed.head()
+~~~
+
+:point_right: Material complementar sobre a renomeação de rótulos de coluna ou linha na documentação oficial https://pandas.pydata.org/pandas-docs/stable/user_guide/basics.html#basics-rename
+
+## Calculando estatísticas
+
+
