@@ -23,5 +23,5 @@ Procure pelo MySQL Workbench na versão Community.
 Na instalação, recomendamos selecionar o tipo Custom, para selecionarmos os produtos que vamos instalar. 
 
 
-<img src="./imagens/Instalacao-01.png">
+<img src="./imagens/Install-01.png">
 
