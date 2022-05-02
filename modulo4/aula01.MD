@@ -19,3 +19,6 @@ Nesta semana vamos tratar de um tema muito interessante. O nosso querido "SQL". 
 Os exemplos utilizados foram realizados e capturados no MySQL Workbench. Segue o link para download (https://dev.mysql.com/downloads/mysql/).
 
 Procure pelo MySQL Workbench na versão Community.
+
+Na instalação, recomendamos selecionar o tipo Custom, para selecionarmos os produtos que vamos instalar. 
+
