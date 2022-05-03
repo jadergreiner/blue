@@ -31,7 +31,7 @@ Quando falamos de Banco de dados, precisamos voltar aos registros físicos de bi
 
 Estes registros eram individualizados, mantinha-se um histórico muito longo de informações e também uma metodologia de indexação e recuperação da informação quando se precisava dela. Mas não vamos nos alongar muito, mas fica o convite para quem quiser pesquisar mais sobre o assunto. 
 
-Os Bancos de dados como conhecemos hoje, o modelo relacional, é uma teoria matemática desenvolvida por Edgar Frank Codd. Ele desceve como as beses de dados devem funcionar. E veja bem, estamos falando de de um período entre 1960-1970. 
+Os Bancos de dados como conhecemos hoje, o modelo relacional, é uma teoria matemática desenvolvida por Edgar Frank Codd. Ele desceve como as bases de dados devem funcionar. E veja bem, estamos falando de de um período entre 1960-1970. 
 
 Mas me conta aí, você sabia disso :bowtie: ? 
 
