@@ -42,3 +42,5 @@ Bancos de dados ou bases de dados são conjuntos de arquivos relacionados entre 
 :pushpin: Agora um ponto de reflexão para debatermos em aula! 
 
 Quando falamos em Dados e informações. Estou falando a mesma coisa❓
+
+Os bancos de dados são operados pelos Sistemas Gerenciadores de Bancos de Dados (SGBD), que surgiram na década de 1970. Outro tipo notável é o SGBD Orientado a Objetos, implementado em bancos dados com estruturas complexas ou aplicações que mudam constantemente.
