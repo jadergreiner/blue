@@ -94,3 +94,23 @@ Sistemas gigantescos (na casa dos Terabytes) já são realidade e novos recursos
 Data mining(mineraçaõ de dados), Data WareHouse, Data Marts, Data Lake são técnicas atualmente utilizados. Sistemas de compras inteligentes e recomendações baseadas em dados. Isso sem falar nos Chatbots e Metaverso.
 
 Ufa! Bastante conteúdo teórico. Mas é importante refletir e pensar sobre a evolução e de que como chegamos até aqui. 
+
+## Bancos relacionais e não relacionais
+
+Eu tenho certeza que você já ouviu falar de Bancos relacionaios e bancos não relacionais. Esse assunto esta cada vez mais em foco e entender claramente a diferença entre eles vai te diferenciar como um profissional de dados.
+
+**O que é um banco relacional** ❓
+
+Podemos considerar como banco relacional o armazenamento e a estrutura de qualquer sistema. Seja ele de gestão financeira, cadastro de clientes, cadastro de funcionários, cadasrto de cursos ou qualquer outra aplicação que possa pensar. O importante é compreender que neste mundo informatizado eles são fundamentais para o funcionamento dos programas. 
+
+A depender de sua arquitetura e finalidade, os dados armazenados podem ser acessados e compartilhados entre outros bancos de dados.
+
+O modelo relacional armazena dados estruturados. Cada um dos campos é planejado antes, seja em relação ao nome da coluna (idade, por exemplo), o tipo de dados (numérico) e se o campo é obrigatório ou pode ficar em branco (nulo).
+
+<img src = "https://wandersonalvesdev.files.wordpress.com/2013/02/mer.png">
+
+Neste modelo, cada linha representa um registro que possui uma chave exclusiva. 
+
+Por exemplo, uma tabela que armazene os cursos oferecidos por nossa escola. Cada linha representa um curso e cada um deles deve receber uma chave única. Geralmente chamamos de ID. Algo semelhante a estrutura abaixo poderia ser a tabela de cursos.
+
+
