@@ -112,5 +112,5 @@ O modelo relacional armazena dados estruturados. Cada um dos campos é planejado
 Neste modelo, cada linha representa um registro que possui uma chave exclusiva. 
 
 Por exemplo, uma tabela que armazene os cursos oferecidos por nossa escola. Cada linha representa um curso e cada um deles deve receber uma chave única. Geralmente chamamos de ID. Algo semelhante a estrutura abaixo poderia ser a tabela de cursos.
-
+<img src="./imagens/diagramaCurso.png">
 
