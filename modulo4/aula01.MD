@@ -122,3 +122,20 @@ Uma segunda tabela, nosso cadastro de professores contém o nome, dados de conta
 Estas duas tabelas têm uma coisa em comum, alguma sugestão ❓ 
 
 A coluna id_professor é um atributo das duas tabelas. Mas por causa dessa coluna em comum, o banco de dados relacional pode criar uma relação entre as duas tabelas. Dessa forma, quando nossa aplicação requistar o cadastro de um curso, através do código do professor, teremos acesso a suas informações de contato.
+
+O modelo relacional é o melhor em manter a consistência de dados. Por exemplo, quando um cliente deposita dinheiro em um caixa eletrônico e analisa o saldo da conta em um celular, o cliente espera ver esse depósito refletido imediatamente em um saldo atualizado da conta. Os bancos de dados relacionais se destacam nesse tipo de consistência de dados, garantindo que várias instâncias de um banco de dados tenham os mesmos dados o tempo todo.
+
+Os bancos de dados relacionais lidam com regras e políticas de negócios em um nível muito granular, com políticas rígidas sobre compromisso (isto é, fazer uma alteração no banco de dados permanente). Por exemplo, considere um banco de dados de inventário que rastreie três peças que são sempre usadas juntas. Quando uma peça é retirada do inventário, as outras duas também devem ser retiradas. Se uma das três partes não estiver disponível, nenhuma das partes deve ser retirada - todas as três partes devem estar disponíveis antes que o banco de dados assuma qualquer compromisso. Um banco de dados relacional não assumirá o compromisso por uma peça até que saiba que pode confirmar todas as três. Essa capacidade de compromisso multifacetada é chamada atomicidade. A atomicidade é a chave para manter os dados precisos no banco de dados e garantir que eles estejam em conformidade com regras, regulamentos e políticas da empresa.
+
+Quatro propriedades essenciais definem as transações do banco de dados relacional: atomicidade, consistência, isolamento e durabilidade, normalmente denominados ACID.
+
+
+**A atomicidade** define todos os elementos que compõem uma transação completa do banco de dados.
+
+**A consistência** define as regras para manter os pontos de dados em um estado correto após uma transação.
+
+**O isolamento** mantém o efeito de uma transação invisível para outras pessoas até ser confirmada, para evitar confusão.
+
+**A durabilidade** garante que as alterações de dados se tornem permanentes quando a transação for confirmada.
+
+<img src = "https://i.pinimg.com/originals/1a/57/20/1a57203e8602ea322f3cc6a5f9e21f44.jpg">
