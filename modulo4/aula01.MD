@@ -4,11 +4,13 @@
 
 1. Conceitos iniciais de bancos de dados
 
-2. Bancos relacionais e não relacionais
+2. Bancos relacionais
 
-3. Modelagem de dados
+3. Bancos não relacionais
 
-4. Criando nosso banco e executando os primeiros comandos
+4. Modelagem de dados
+
+5. Criando nosso banco e executando os primeiros comandos
 
 ## Conceitos iniciais de bancos de dados
 
@@ -95,7 +97,7 @@ Data mining(mineraçaõ de dados), Data WareHouse, Data Marts, Data Lake são t�
 
 Ufa! Bastante conteúdo teórico. Mas é importante refletir e pensar sobre a evolução e de que como chegamos até aqui. 
 
-## Bancos relacionais e não relacionais
+## Bancos relacionais
 
 Eu tenho certeza que você já ouviu falar de Bancos relacionaios e bancos não relacionais. Esse assunto esta cada vez mais em foco e entender claramente a diferença entre eles vai te diferenciar como um profissional de dados.
 
@@ -139,3 +141,32 @@ Quatro propriedades essenciais definem as transações do banco de dados relacio
 **A durabilidade** garante que as alterações de dados se tornem permanentes quando a transação for confirmada.
 
 <img src = "https://i.pinimg.com/originals/1a/57/20/1a57203e8602ea322f3cc6a5f9e21f44.jpg">
+
+##  Bancos não relacionais
+
+Também conhecidos como Bancos NoSQL, o banco de dados não relacional é uma forma de processar e organizar um grande volume de dados sem a necessidade de uma estruturação prévia. 
+
+Diferente do que estudamos no módulo anterior, os bancos não relacionais não possuem uma estrutura rígida e estruturada. 
+
+Atualmente, os bancos NoSQL se destacam nos cenários de grande volume de dados, especialmente quando relacionado à nuvem, dispositivos móveis e big data.
+
+OS bancos NoSQL contam com estruturas variadas e organizações sob medida.
+
+Desta forma, eles não se limitam ao modelo de estruturação de dados fixos. 
+
+Atualmente temos quatro modelos que se destacam nas principais aplicações no mercado.
+
+**1. Chave-valor**
+
+Como o próprio nome sugere, o formato chave-valor realiza o pareamento dos dados a partir das chaves e valores a partir da tabela de hash. Este banco de dados de costume ser utilizado quando as chaves identificadas e os valores associados não são.
+
+Armazena um conjunto de dados, seja ele simples ou complexo, identificados por um identificador exclusivo. Apresenta um bom desempenho em aplicações na nuvem. 
+
+Uso mais comum em sessões de usuário, cache e carrinhos de compra.
+
+**Casos de uso:** Twitter, Github, Stakeoverflow entre outros.
+
+<img src = "https://blog.debugeverything.com/wp-content/uploads/2021/04/banco-de-dados-key-value-exemplo.png">
+
+
+
