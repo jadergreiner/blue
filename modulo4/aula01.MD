@@ -216,3 +216,35 @@ Por fim, colunar costuma se destacar por o tipo de dados de uma coluna larga, qu
 
 Os bancos de dados colunares disponíveis no mercado desenvolveram outras otimizações para melhoria de performance, o que os torna ideiais para times de analytics que precisam lidar com grandes bases de dados – principalmente otimização de cruzamentos entre tabelas.
 
+
+## Modelagem de dados
+
+A modelagem relacional representa o banco de dados a partir de uma coleção de relações para suportar o processamento de transações online (OLTP).
+
+São otimizados para processar consultas que podem afetar uma pequena parte do banco, bem como transações que envolvam inserções e alterações. Em síntese, são projetados para retornar dados únicos em linha. 
+
+A modelagem de dados pode ser dividida em três grupos:
+
+- Modelo conceitual, modelo lógico e modelo físico.
+
+**Modelo conceitual**
+
+Finalidade do modelo conceitual de dados é capturar os requisitos de informação e regras de negócio sob o ponto de vista do negócio.
+
+Para isto, torna-se necessário o entendimento e a correta aplicação dos mecanismos de abstração, utilizados na modelagem conceitual de dados.
+
+Quando pensamos em modelo conceitual, falamos de entidades e seus relacionamentos. Lembra do exemplo lá do começo da aula ❓
+Quando exemplificamos Cursos e Professores. Em nosso exemplo, Cursos e Professores são as entidades.
+
+**Modelo lógico**
+
+Um modelo de dados lógico é uma representação lógica das informações da área de negócios, não é um banco de dados, é independente do modelo físico.
+
+Este é o conceito chave da modelagem de dados lógica. Ele deve ser independente da tecnologia implementada devido a constante mudança dos produtos tecnológicos.
+
+Não vamos nos estender, já que não é o foco de nosso módulo, mas deixo um link para você explorar mais sobre o tema.
+
+<a href="https://www.devmedia.com.br/por-que-construir-um-modelo-de-dados-logico-parte-i/368#:~:text=Um%20modelo%20de%20dados%20l%C3%B3gico%20%C3%A9%20uma%20representa%C3%A7%C3%A3o,implementada%20devido%20a%20constante%20mudan%C3%A7a%20dos%20produtos%20tecnol%C3%B3gicos." target="_blank"> Modelo lógico << </a>                                                                                  
+
+
+
