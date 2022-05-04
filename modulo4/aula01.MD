@@ -111,7 +111,9 @@ Em um banco de dados relacional, caad linha na tabela é um registro com uma ID 
 
 Por exemplo, uma tabela que armazene os cursos oferecidos por nossa escola. Cada linha representa um curso e cada um deles deve receber uma chave única. Algo semelhante a estrutura abaixo poderia ser a tabela de cursos.
 
-<img src="./imagens/diagramaCurso.png">
+<img src="./imagens/diagramaCursos.png">
 
-Agora vamos pensar numa segunda
+Esta primeira tabela tem os dados do curso, de forma que cada registro incluir o nome do curso, o professor e se o curso está ativo ou não. Cada um dos atributos recebe uma coluna específica e o banco de dados atribui uma ID única (uma chave) a cada linha.
+
+Uma segunda tabela, nosso cadastro de professores contém o nome, dados de contato e um ID exclusivo.
 
