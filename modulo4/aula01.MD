@@ -247,7 +247,5 @@ Não vamos nos estender, já que não é o foco de nosso módulo, mas deixo um l
 
 <a href="https://www.devmedia.com.br/por-que-construir-um-modelo-de-dados-logico-parte-i/368#:~:text=Um%20modelo%20de%20dados%20l%C3%B3gico%20%C3%A9%20uma%20representa%C3%A7%C3%A3o,implementada%20devido%20a%20constante%20mudan%C3%A7a%20dos%20produtos%20tecnol%C3%B3gicos." target="_blank"> Modelo lógico << </a>   
 
-[go](http://stackoverflow.com/?target=_blank)
-
 
 
