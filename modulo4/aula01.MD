@@ -184,7 +184,7 @@ O NoSQL mais conhecido de armazenamento de documentos é o **MongoDB.**
 
 Grandes empresas que usam o MongoDB. Por sua versatilidade, performance e segurança, MongoDB é utilizado por grandes empresas como **Rede Globo, Codecademy, Google Search, Foursquare, IBM, Orange S.A., The Gap, Inc., Uber, HSBC, eBay, e Cisco**.
 
-**3. Grafos / Gráfico / Graph **
+**3. Grafos / Gráfico / Graph**
 
 O banco de dados não relacional do tipo de gráfico utiliza um modelo baseado em nós e bordas que representa os dados interconectados. Deste modo, o armazenamento fica mais complexo, porém igualmente mais detalhado.
 
@@ -206,5 +206,13 @@ Os bancos de dados de grafos são uma boa opção para aplicativos de recomenda�
 
 fonte: https://aws.amazon.com/pt/nosql/graph/
 
+**4. Colunar (Wide column)**
 
+Por fim, colunar costuma se destacar por o tipo de dados de uma coluna larga, que permite a identificação dos dados de famílias de colunas. Os bancos de dados colunares, como o Amazon Redshift e o Google BigQuery, armazenam a informação coluna-a-coluna, o que permite:
+
+- Maior compressão – já que dados de tipos iguais são armazenados juntos, há uma otimização de espaço utilizado
+- Eliminação da necessidade de índices
+- Alta-performance para operações de agregação
+
+Os bancos de dados colunares disponíveis no mercado desenvolveram outras otimizações para melhoria de performance, o que os torna ideiais para times de analytics que precisam lidar com grandes bases de dados – principalmente otimização de cruzamentos entre tabelas.
 
