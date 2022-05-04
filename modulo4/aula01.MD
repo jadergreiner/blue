@@ -115,5 +115,10 @@ Por exemplo, uma tabela que armazene os cursos oferecidos por nossa escola. Cada
 
 Esta primeira tabela tem os dados do curso, de forma que cada registro incluir o nome do curso, o professor e se o curso está ativo ou não. Cada um dos atributos recebe uma coluna específica e o banco de dados atribui uma ID única (uma chave) a cada linha.
 
-Uma segunda tabela, nosso cadastro de professores contém o nome, dados de contato e um ID exclusivo.
+Uma segunda tabela, nosso cadastro de professores contém o nome, dados de contato e um ID exclusivo. 
 
+<img src="./imagens/diagramaProfessor.png">
+
+Estas duas tabelas têm uma coisa em comum, alguma sugestão ❓ 
+
+A coluna id_professor é um atributo das duas tabelas. Mas por causa dessa coluna em comum, o banco de dados relacional pode criar uma relação entre as duas tabelas. Dessa forma, quando nossa aplicação requistar o cadastro de um curso, através do código do professor, teremos acesso a suas informações de contato.
