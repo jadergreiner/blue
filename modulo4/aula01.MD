@@ -107,10 +107,11 @@ A depender de sua arquitetura e finalidade, os dados armazenados podem ser acess
 
 O modelo relacional armazena dados estruturados. Cada um dos campos é planejado antes, seja em relação ao nome da coluna (idade, por exemplo), o tipo de dados (numérico) e se o campo é obrigatório ou pode ficar em branco (nulo).
 
-<img src = "https://wandersonalvesdev.files.wordpress.com/2013/02/mer.png">
+Em um banco de dados relacional, caad linha na tabela é um registro com uma ID exclusiva chamada chave. As colunas da tabela contêm atributos dos dados e cada registro tem um único valor para cada um destes atributos, facilitando o estabelecimento das relações entre os pontos de dados.
 
-Neste modelo, cada linha representa um registro que possui uma chave exclusiva. 
+Por exemplo, uma tabela que armazene os cursos oferecidos por nossa escola. Cada linha representa um curso e cada um deles deve receber uma chave única. Algo semelhante a estrutura abaixo poderia ser a tabela de cursos.
 
-Por exemplo, uma tabela que armazene os cursos oferecidos por nossa escola. Cada linha representa um curso e cada um deles deve receber uma chave única. Geralmente chamamos de ID. Algo semelhante a estrutura abaixo poderia ser a tabela de cursos.
 <img src="./imagens/diagramaCurso.png">
+
+Agora vamos pensar numa segunda
 
