@@ -180,6 +180,31 @@ Normalmente, um documento contém os dados completos de uma entidade. Os itens q
 
 Um único documento poderia conter informações que estariam espalhadas por várias tabelas relacionais em um sistema de gerenciamento de banco de dados relacional (RDBMS). A base de dados do tipo documentos não exige que todos os documentos tenham a mesma estrutura, esta abordagem proporciona uma grande flexibilidade.
 
-O NoSQL mais conhecido de armazenamento de documentos é o MongoDB.
+O NoSQL mais conhecido de armazenamento de documentos é o **MongoDB.**
 
 Grandes empresas que usam o MongoDB. Por sua versatilidade, performance e segurança, MongoDB é utilizado por grandes empresas como **Rede Globo, Codecademy, Google Search, Foursquare, IBM, Orange S.A., The Gap, Inc., Uber, HSBC, eBay, e Cisco**.
+
+**3. Grafos / Gráfico / Graph **
+
+O banco de dados não relacional do tipo de gráfico utiliza um modelo baseado em nós e bordas que representa os dados interconectados. Deste modo, o armazenamento fica mais complexo, porém igualmente mais detalhado.
+
+Um banco de dados do tipo graph gerencia dois tipos de informações, nós e arestas. Os nós representam entidades, e as arestas especificam as relações entre estas entidades. Ambos, nós e arestas, podem ter propriedades que fornecem informações sobre o nó ou aresta, semelhantes as colunas em uma tabela. As arestas também podem ter uma direção indicando a natureza da relação.
+
+O objetivo de um armazenamento de dados do tipo graph é permitir que uma aplicação execute consultas que atravessam a rede de nós e arestas de forma eficiente, e que permita analisar as relações entre entidades.
+
+Em contraste com os bancos de dados relacionais e NoSQL, os bancos de dados do tipo graph armazenam as relações de dados como relacionamentos. Este armazenamento explícito de dados de relacionamento significa menos desconexões entre seu esquema e seu banco de dados real.
+
+Na verdade, a flexibilidade do modelo de grafos permite adicionar novos nós e relacionamentos sem comprometer sua rede existente ou migrar seus dados de forma demorada. Todos os seus dados e relacionamentos originais permanecem intactos.
+
+O grafo a seguir é um exemplo de grafo de rede social. Considerando as pessoas (nós) e seus relacionamentos (arestas), é possível descobrir quem são os “amigos dos amigos” de uma pessoa específica, por exemplo, os amigos dos amigos de Howard. 
+
+<img src = "https://d1.awsstatic.com/diagrams/foaf-graph.e5e42865e0ee97a2972f9014d28f525ef68a981b.png">
+
+Como exemplo, os bancos de dados de grafos podem fazer uma prevenção sofisticada contra fraudes. Com os bancos de dados de grafos, você pode usar relacionamentos para processar transações financeiras e de compras praticamente em tempo real. Com consultas de grafos rápidas, você pode detectar, por exemplo, se um possível comprador está usando o mesmo endereço de e-mail e cartão de crédito que o usado em um caso de fraude conhecido. Os bancos de dados de grafos também podem ajudá-lo a detectar facilmente padrões de relacionamento, como várias pessoas associadas a um endereço de e-mail pessoal ou várias pessoas compartilhando o mesmo endereço IP, mas residentes em endereços físicos diferentes. 
+
+Os bancos de dados de grafos são uma boa opção para aplicativos de recomendação. Com os bancos de dados de grafos, você pode armazenar em um grafo os relacionamentos entre as categorias de informação, como os interesses, os amigos e o histórico de compras dos clientes. Você pode usar um banco de dados de grafos altamente disponível para fazer recomendações de produtos a um usuário com base em quais produtos foram comprados por outras pessoas que seguem o mesmo esporte e têm histórico de compras similar. Além disso, é possível identificar pessoas com um amigo em comum, mas que ainda não se conhecem, para fazer uma recomendação de amizade. 
+
+fonte: https://aws.amazon.com/pt/nosql/graph/
+
+
+
