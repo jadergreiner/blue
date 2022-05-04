@@ -168,5 +168,18 @@ Uso mais comum em sessões de usuário, cache e carrinhos de compra.
 
 <img src = "https://blog.debugeverything.com/wp-content/uploads/2021/04/banco-de-dados-key-value-exemplo.png">
 
+**2. Documento**
 
+Uma base de dados orientada a documento gerencia um conjunto de campos com chaves e valores em uma entidade referida como documento. Estes dados armazenam normalmente dados na forma de documentos JSON.
 
+Cada campo referencia um valor que pode ser expresso de várias maneiras, como um número, um objeto, array, uma string ou um outro documento. Os dados nos campos de um documento podem ser codificados de várias maneiras, incluindo XML, YAML, JSON, BSON, ou até mesmo armazenados como texto simples.
+
+<img src = "https://blog.debugeverything.com/wp-content/uploads/2021/04/banco-de-dados-document-stores.jpg">
+
+Normalmente, um documento contém os dados completos de uma entidade. Os itens que constituem uma entidade são específicos da aplicação. Por exemplo, uma entidade pode conter os detalhes de um cliente, um pedido, ou uma combinação de ambos.
+
+Um único documento poderia conter informações que estariam espalhadas por várias tabelas relacionais em um sistema de gerenciamento de banco de dados relacional (RDBMS). A base de dados do tipo documentos não exige que todos os documentos tenham a mesma estrutura, esta abordagem proporciona uma grande flexibilidade.
+
+O NoSQL mais conhecido de armazenamento de documentos é o MongoDB.
+
+Grandes empresas que usam o MongoDB. Por sua versatilidade, performance e segurança, MongoDB é utilizado por grandes empresas como **Rede Globo, Codecademy, Google Search, Foursquare, IBM, Orange S.A., The Gap, Inc., Uber, HSBC, eBay, e Cisco**.
