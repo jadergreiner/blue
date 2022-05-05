@@ -281,4 +281,18 @@ Primeiro, abra seu MySQL Workbench, selecione a conexão e vamos partir juntos d
 
 No começo do módulo deixamos disponível um vídeo com instalação e instruções iniciais.
 
+Vamos começar criando nosso banco de dados
 
+<code> 
+  create database blue;
+</code>
+
+Para executar o comando, pode pressionar CTRL + Enter ou clicar nos ícones de raio. 
+
+Na imagem abaixo, em destaque os ícones que executam o código. Um deles executa a linha que está posicionada o cursor e o outro executa todo o código.
+
+Na imagem destacamos também em verde o ícone de "Refresh", vai clicar nele após criar a base de dados para que possa visualizar a base nos Schemas.
+
+Uma dica, caso seu painel esteja com outras opções, confira se se está na opção de Schemas. As vezes o Workbench abre na aba de Administration, na imagem em azul mostro aonde clicar para mostrar o painel de execução de linha de código.
+
+<img src="./imagens/painel.png">
