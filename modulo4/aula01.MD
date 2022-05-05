@@ -323,3 +323,13 @@ Se você está me acompanhando, deve estar com uma estrutura igual ou semelhante
 
 <img src="./imagens/schemaPessoas.png">
 
+Concorda que a tabela pessoas ficou fora de contexto. Vamos remove-la de nosso modelo.
+
+<code>
+  DROP TABLE pessoas;
+</code>
+
+O comando DROP faz a remoção. Sua sintaxe é semelhante ao CREATE. Basta informar o tipo de remoção (Table, Database) e o nome. Aliás, tome cuidado para não confundir os comandos e acabar removendo Bases ou tabelas por engano.
+
+Vamos avançar em nossos estudos, é hora de inserir dados em nossas tabelas.
+
