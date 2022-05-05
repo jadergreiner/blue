@@ -307,14 +307,15 @@ Após criar nosso banco de dados, precisamos indicar que vamos trabalhar com ele
 
 Banco inicializado para utilização. Vamos criar a nossa primeia tabela.
 
-<code>
-  CREATE TABLE Pessoas ( 
-    PessoaID int,
-    Nome varchar(255),
-    Sobrenome varchar(255),
-    Cidade varchar(255),
-    Estado varchar(2)
-  );
-</code>
+<img src="./imagens/createTable.png">
 
+Vamos compreender a sintaxe básica:
+- Sempre iniciar com CREATE table nomeDaTabela(), indicando que será criada uma nova tabela;
+- Dentro dos parênteses colocamos os atributos(colunas) e ao lado definimos o tipo de dado;
+- Cada uma das colunas deve estar separada por vírgula.
+- Finalizamos com ";", indicando o fim do script.
+
+Repensando o modelo, optamos em criar uma tabela de pessoa física e outra tabela de pessoa jurídica.
+
+<img src="./imagens/pf_pj.png">
 
