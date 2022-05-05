@@ -287,6 +287,8 @@ Vamos começar criando nosso banco de dados
   create database blue;
 </code>
 
+
+
 Para executar o comando, pode pressionar CTRL + Enter ou clicar nos ícones de raio. 
 
 Na imagem abaixo, em destaque os ícones que executam o código. Um deles executa a linha que está posicionada o cursor e o outro executa todo o código.
@@ -296,3 +298,23 @@ Na imagem destacamos também em verde o ícone de "Refresh", vai clicar nele ap�
 Uma dica, caso seu painel esteja com outras opções, confira se se está na opção de Schemas. As vezes o Workbench abre na aba de Administration, na imagem em azul mostro aonde clicar para mostrar o painel de execução de linha de código.
 
 <img src="./imagens/painel.png">
+
+Após criar nosso banco de dados, precisamos indicar que vamos trabalhar com ele. Para isso, utilizamos o código abaixo:
+
+<code>
+  use blue;
+</code>
+
+Banco inicializado para utilização. Vamos criar a nossa primeia tabela.
+
+<code>
+  CREATE TABLE Pessoas ( 
+    PessoaID int,
+    Nome varchar(255),
+    Sobrenome varchar(255),
+    Cidade varchar(255),
+    Estado varchar(2)
+  );
+</code>
+
+
