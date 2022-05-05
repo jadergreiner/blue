@@ -329,7 +329,17 @@ Concorda que a tabela pessoas ficou fora de contexto. Vamos remove-la de nosso m
   DROP TABLE pessoas;
 </code>
 
-O comando DROP faz a remoção. Sua sintaxe é semelhante ao CREATE. Basta informar o tipo de remoção (Table, Database) e o nome. Aliás, tome cuidado para não confundir os comandos e acabar removendo Bases ou tabelas por engano.
+O comando DROP faz a remoção. Sua sintaxe é semelhante ao CREATE. Basta informar o tipo de remoção (Table, Database) e o nome. 
+
+Ma lembre-se, com grandes poderes vem junto grandes responsabilidade, tome cuidado para não confundir os comandos e acabar removendo Bases ou tabelas por engano.
 
 Vamos avançar em nossos estudos, é hora de inserir dados em nossas tabelas.
+
+A sintaxe básica da inserção de dados é:
+
+- INSERT INTO nomeTabela(nomeColuna) VALUES(valorÚnico);
+- o nome da tabela (INSERT INTO nomeTabela);
+- ao lado do nome da tabela, abrimos e fechamos parenteses com o nome das colunas que vamos inserir os dados;
+- ao lado de values, entre parênteses, informamos um valor único para cada uma das colunas que informamos anteriormente;
+- observar a ordem das colunas, o tipo de dado e se existe alguma restrição (ex, o tamanho do campo)
 
