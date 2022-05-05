@@ -22,12 +22,12 @@ Os exemplos utilizados foram realizados e capturados no MySQL Workbench. Segue o
 
 Procure pelo MySQL Workbench na versão Community.
 
-Na instalação, recomendamos selecionar o tipo Custom, para selecionarmos os produtos que vamos instalar. 
+Na instalação, recomendamos selecionar o tipo Custom, para selecionarmos os produtos que vamos instalar, mas se preferir, pode seguir o exemplo do vídeo abaixo.
 
+[![Vídeo de instalação e exploração inicial]](https://www.youtube.com/watch?v=zpssr3u1EO8)
 
 <img src="./imagens/Install-01.png">
 
-:exclamation:Você irá encontrar nos documentos complementares orientações de instalação.
 
 Quando falamos de Banco de dados, precisamos voltar aos registros físicos de bibliotecas. Pense nos negócios em geral, registros policiais, fichas de pacientes, registros de estoque e também entradas e saídas de pessoas e materiais em um prédio ou pavilhão. Esse resgate é importante, pois foi lá que tudo começou.
 
@@ -269,3 +269,16 @@ Na figura abaixo esta diferença poderá ser percebida.
 **Figura 2.** Um simples modelo físico de dados
 
 fonte: https://www.devmedia.com.br/modelagem-de-dados-tutorial/20398
+
+
+# Criando nosso banco e executando os primeiros comandos
+
+Tá na hora de colocar a mão na massa! Vamos de prática?
+
+Primeiro, abra seu MySQL Workbench, selecione a conexão e vamos partir juntos do painel inicial, semelhante a este abaixo.
+
+<img src = "https://2.bp.blogspot.com/-6wO2XFge_-E/WbG_2zYLlyI/AAAAAAAABh8/ZuLiCgPFx3U1pcP6y34YQEZ7HIlOzZRlACEwYBhgL/s1600/2017-09-03%2B19_30_37-Greenshot.png">
+
+No começo do módulo deixamos disponível um vídeo com instalação e instruções iniciais.
+
+
