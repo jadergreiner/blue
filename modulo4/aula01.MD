@@ -228,7 +228,7 @@ A modelagem de dados pode ser dividida em três grupos:
 
 - Modelo conceitual, modelo lógico e modelo físico.
 
-**Modelo conceitual**
+**Modelo de dados conceituais**
 
 Finalidade do modelo conceitual de dados é capturar os requisitos de informação e regras de negócio sob o ponto de vista do negócio.
 
@@ -236,6 +236,8 @@ Para isto, torna-se necessário o entendimento e a correta aplicação dos mecan
 
 Quando pensamos em modelo conceitual, falamos de entidades e seus relacionamentos. Lembra do exemplo lá do começo da aula ❓
 Quando exemplificamos Cursos e Professores. Em nosso exemplo, Cursos e Professores são as entidades.
+
+<img src = "https://i.ytimg.com/vi/TX1skwoYfz4/maxresdefault.jpg">
 
 **Modelo lógico**
 
@@ -247,5 +249,21 @@ Não vamos nos estender, já que não é o foco de nosso módulo, mas deixo um l
 
 <a href="https://www.devmedia.com.br/por-que-construir-um-modelo-de-dados-logico-parte-i/368#:~:text=Um%20modelo%20de%20dados%20l%C3%B3gico%20%C3%A9%20uma%20representa%C3%A7%C3%A3o,implementada%20devido%20a%20constante%20mudan%C3%A7a%20dos%20produtos%20tecnol%C3%B3gicos." target="_blank"> Modelo lógico << </a>   
 
+<img src = "https://i.ytimg.com/vi/P7msDw5Otqc/hqdefault.jpg">
 
 
+**Modelo físico**
+
+Modelos físicos são usados para projetar o esquema interno de um banco de dados, descrevendo as tabelas de dados, as colunas de dados das tabelas e o relacionamento entre as tabelas.
+
+Embora o modelo físico e lógico parecam similares, e de fato são, o nível de detalhes que eles modelam pode ser ser significamente diferente. Isso acontece por que  objetivo de cada diagrama é difetente. O modelo lógico pode ser usado para explorar conceitos de domínio do negócio com os envolvidos no projeto e o modelo físico para definir o projeto do banco de dados.
+
+Na figura abaixo esta diferença poderá ser percebida.
+
+<img src = "https://arquivo.devmedia.com.br/REVISTAS/sql/imagens/86/1/image001.jpg">
+
+**Figura 1.** Um simples modelo lógico de dados
+
+<img src = "https://arquivo.devmedia.com.br/REVISTAS/sql/imagens/86/1/image002.jpg">
+
+**Figura 2.** Um simples modelo físico de dados
