@@ -317,5 +317,9 @@ Vamos compreender a sintaxe básica:
 
 Repensando o modelo, optamos em criar uma tabela de pessoa física e outra tabela de pessoa jurídica.
 
-<img src="./imagens/pf_pj.png">
+<img src="./imagens/createPessoas.png">
+
+Se você está me acompanhando, deve estar com uma estrutura igual ou semelhante a esta.
+
+<img src="./imagens/schemaPessoas.png">
 
