@@ -267,3 +267,5 @@ Na figura abaixo esta diferença poderá ser percebida.
 <img src = "https://arquivo.devmedia.com.br/REVISTAS/sql/imagens/86/1/image002.jpg">
 
 **Figura 2.** Um simples modelo físico de dados
+
+fonte: https://www.devmedia.com.br/modelagem-de-dados-tutorial/20398
