@@ -313,7 +313,7 @@ Banco inicializado para utilização. Vamos criar a nossa primeia tabela.
 Vamos compreender a sintaxe básica:
 - Sempre iniciar com CREATE table nomeDaTabela(), indicando que será criada uma nova tabela;
 - Dentro dos parênteses colocamos os atributos(colunas) e ao lado definimos o tipo de dado;
-- Cada uma das colunas deve estar separada por vírgula.
+- Para cada nova coluna, devemos colocar uma vírgula indicando o fim dos parâmetros;
 - Finalizamos com ";", indicando o fim do script.
 
 Repensando o modelo, optamos em criar uma tabela de pessoa física e outra tabela de pessoa jurídica.
@@ -330,7 +330,7 @@ Concorda que a tabela pessoas ficou fora de contexto. Vamos remove-la de nosso m
   DROP TABLE pessoas;
 </code>
 
-O comando DROP faz a remoção. Sua sintaxe é semelhante ao CREATE. Basta informar o tipo de remoção (Table, Database) e o nome. 
+O comando DROP faz a remoção. Sua sintaxe é semelhante ao CREATE. Basta informar o tipo de remoção (Table, Database) e o nome do objeto, neste caso, o nome da tabela. 
 
 Ma lembre-se, com grandes poderes vem junto grandes responsabilidade, tome cuidado para não confundir os comandos e acabar removendo Bases ou tabelas por engano.
 
@@ -342,5 +342,49 @@ A sintaxe básica da inserção de dados é:
 - o nome da tabela (INSERT INTO nomeTabela);
 - ao lado do nome da tabela, abrimos e fechamos parenteses com o nome das colunas que vamos inserir os dados;
 - ao lado de values, entre parênteses, informamos um valor único para cada uma das colunas que informamos anteriormente;
-- observar a ordem das colunas, o tipo de dado e se existe alguma restrição (ex, o tamanho do campo)
+- observar a ordem das colunas, o tipo de dado e se existe alguma restrição (ex, o tamanho do campo);
 
+Nosso primeiro INSERT na tabela de Pessoas Físicas
+
+<img src = "./imagens/PrimeiroInsert.png">
+
+Muito bom, mas se agora quisermos adicionar mais de um registro ao mesmo tempo ❓ 
+
+Podemos aproveitar da mesma estrutura e adicionar o número de registros necessários no mesmo script. Veja no exemplo abaixo.
+
+<img src = "./imagens/multiplosInserts.png">
+
+Agora você deve estar se perguntando, aonde está os registros que incluímos ❓
+
+Para que façamos a leitura de dados, utilizamos o famoso SELECT. 
+
+Sua sintaxe básica é:
+
+SELECT (nome das colunas) nomeDaTabela;
+Sendo que, quando quisermos retornar todas as colunas da tabela, usamos o "*".
+
+Vamos com um exemplo para ficar mais claro.
+
+<img src = "./imagens/select.png">
+
+Se correu tudo bem com os seus scripts, o resultado do seu SELECT deve ser semelhante a este.
+
+E se quisermos retornar apenas as colunas nome e CPF ❓
+
+<img src = "./imagens/nomeCPF.png">
+
+Vamos avançar um pouco ❓ Vou inserir mais alguns dados em nossa tabela.
+
+<img src = "./imagens/novosRegistros.png">
+
+Executando novamente nosso SQL, temos este resultado.
+
+<img src = "./imagens/selectCompleto.png">
+
+E se quisermos retornar apenas os registros do Estado de SP? Conheça nosso amigo "**WHERE**".
+
+<img src = "./imagens/whereSP.png">
+
+Mas se eu quero todos os registros do estado de SP, mas de fora da capital. Podemoo usar o script abaixo.
+
+<img src = "./imagens/WhereSPAndCidade.png">
