@@ -234,8 +234,9 @@ Finalidade do modelo conceitual de dados é capturar os requisitos de informaç�
 
 Para isto, torna-se necessário o entendimento e a correta aplicação dos mecanismos de abstração, utilizados na modelagem conceitual de dados.
 
-Quando pensamos em modelo conceitual, falamos de entidades e seus relacionamentos. Lembra do exemplo lá do começo da aula ❓
-Quando exemplificamos Cursos e Professores. Em nosso exemplo, Cursos e Professores são as entidades.
+Quando pensamos em modelo conceitual, falamos de entidades e seus relacionamentos. 
+
+Abaixo um outro exemplo de modelagem.
 
 <img src = "https://i.ytimg.com/vi/TX1skwoYfz4/maxresdefault.jpg">
 
