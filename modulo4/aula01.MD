@@ -388,3 +388,36 @@ E se quisermos retornar apenas os registros do Estado de SP? Conheça nosso amig
 Mas se eu quero todos os registros do estado de SP, mas de fora da capital. Podemoo usar o script abaixo.
 
 <img src = "./imagens/WhereSPAndCidade.png">
+
+É claro que existem tantas outras formas de chegar ao resultado e que iremos explorar no decorrer do módulo. Mas para este primeiro contato, está excelente!
+Fica o convite para inserir novos dados, popular a tabela de Pessoa Jurídica e fazer outras combinações de Where.
+
+Antes de finalizarmos esta aula, gostaria de abordar mais um assunto. E se quisermos atualizar alguma informação? 
+
+Saiba que é possível sim, para isto, usamos o comando UPDATE. 
+
+Sua sintaxe básica é a seguinte:
+
+UPDATE nomedaTabela SET=novoValor WHERE=condicao
+
+Este comando é um pouco mais complexo, extenso e PERIGOSO. Muito importante que você pratique e compreenda bem os poderes do WHERE, para evitar que ocorram manipulações erradas em nosso banco de dados.
+
+Vou executar uma atualização de dados.
+
+Vamos imaginar que a Daiana Dias, CPF 100300507 tenha se mudado para Barueri, vamos atualizar seu cadastro.
+
+<img src = "./imagens/updateIncorreto.png">
+
+Caso vocÊ execute o comando desta forma, acabaríamos atualizando não apenas o registro da Daiana, mas todos os cadastros seriam afetados.
+
+Uma boa prática é informar um chave primária, em nosso caso, o ID da pessoa para atualização.
+
+<img src = "./imagens/update.png">
+
+Chegamos ao fim da nossa primeira aula do módulo 4. Abordamos conceitos iniciais de banco de dados. De prática, gostaria que realizassem o DROP das tabelas e repetissem os passos. Criem outras tabelas e colunas pensando em coisas do seu cotidiano, da sua casa, enfim, pratiquem.
+
+Deixo também disponível um Tutorial em que vocês podem praticar e replicar os exemplos criando o seu próprio banco de dados. Visitem e explorem
+
+https://www.w3schools.com/sql/
+
+Até nosso CodLab!
