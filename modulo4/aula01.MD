@@ -57,7 +57,7 @@ Por volta de 1976, o Dr. Peter Chen propõe o modelo Entidade-Relacionamento (ER
 ![image](https://user-images.githubusercontent.com/87602063/166435298-133f5f0b-3073-4aea-a889-907064d64185.png)
 
 
-Na metodo dos anos 80, a linguagem de SQL se torna um padrão mundial :grin:.
+Na metode dos anos 80, a linguagem de SQL se torna um padrão mundial :grin:.
 
 Pela metade dos anos 90 começa a explosão das vendas na Internet (sim, houve um tempo que não existia a Internet :smile:).
 
