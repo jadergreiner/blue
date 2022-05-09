@@ -7,7 +7,7 @@ inicialmente, conseguiram instalar o MySQL Workbench? Caso tenham enfrentado alg
 Exercícios
 
 Nesta primeira parte do CodeLab, gostaria que pesquizasse um pouco mais sobre Bancos Relacionais e não relacionais para responder as perguntas abaixo. 
-Obs: Estou deixando alguns vídeos e artigos complementares no fim da aula.
+Obs: Veja a sessão de conteúdos complementares.
 
 1. Explique com suas palavras quais as diferenças entre um Banco de Dados relacional e um banco de dados não relacional;
 2. Dois tipos de aplicação de bancos relacionais e dois tipos de aplicação de bancos não relacionais;
@@ -23,8 +23,5 @@ Obs: Estou deixando alguns vídeos e artigos complementares no fim da aula.
 7. Atualize estes dados;
 8. Faça a remoção de alguns dados;
 9. Salve todos os comandos em ar arquivo de texto e envie ao professor junto com a sua modelagem.
-
-[![VBancos de Dados Relacional e Não Relacional]](https://www.youtube.com/watch?v=LU9XAOzpRNo)
-[![Diagrama Entidade Relacionamento - modelo de banco de dados]](https://www.youtube.com/watch?v=XCkd27GtZoM)
 
 
