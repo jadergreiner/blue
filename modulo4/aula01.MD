@@ -57,7 +57,7 @@ Por volta de 1976, o Dr. Peter Chen propõe o modelo Entidade-Relacionamento (ER
 ![image](https://user-images.githubusercontent.com/87602063/166435298-133f5f0b-3073-4aea-a889-907064d64185.png)
 
 
-Na metode dos anos 80, a linguagem de SQL se torna um padrão mundial :grin:.
+Na metade dos anos 80, a linguagem de SQL se torna um padrão mundial :grin:.
 
 Pela metade dos anos 90 começa a explosão das vendas na Internet (sim, houve um tempo que não existia a Internet :smile:).
 
@@ -69,7 +69,7 @@ Em resumo, podemos dizer que OLTP armazena dados transacionais. Ou seja, as oper
 
 Já o OLAP tende a consolidar dados históricos para demonstração e visualizações analíticas. 
 
-Você pode ficar na dúvida do melhor modelo, isso é bem comum viu. Mas deixa te contar, não existe um modelo melhor. Eles servem para objetivos diferentes, então depende do problema a ser resolvido, um ou outro será utilizado. 
+Você pode ficar na dúvida do melhor modelo, isso é bem comum viu. Mas deixa te contar, não existe um modelo melhor. Eles servem para objetivos diferentes, então dependendo do problema a ser resolvido, um ou outro será utilizado. 
 
 Parece muita coisa né, mas eu tenho certeza que no ao final do módulo, esta sopa de letrinhas ficará muito mais clara para você.
 
@@ -79,7 +79,7 @@ Recapitulando para você não se perder, ok? :bulb:
 * Começamos a estruturar e indexar estes dados.
 * Seguimos com o modelo relacional, lembra do Edgar Codd, né?
 * Chegamos no modelo Entidade-Relacionamento do Dr. Peter Chen!
-* Victory 💪! SQL se torna um padrão mundial.
+* Victory 💪! O SQL torna-se um padrão mundial.
 * Até aqui, nossos dados estão de certa forma "isolados" dentro nosso ambiente corporativo.
 
 Depois vem o :boom: boom da internet. Os dados começam a circular e precisamos repensar o modo de armazenar, transitar e dar segurança a estes dados.
@@ -100,7 +100,7 @@ Ufa! Bastante conteúdo teórico. Mas é importante refletir e pensar sobre a ev
 
 ## Bancos relacionais
 
-Eu tenho certeza que você já ouviu falar de Bancos relacionaios e bancos não relacionais. Esse assunto esta cada vez mais em foco e entender claramente a diferença entre eles vai te diferenciar como um profissional de dados.
+Eu tenho certeza que você já ouviu falar de Bancos relacionais e bancos não relacionais. Esse assunto esta cada vez mais em foco e entender claramente a diferença entre eles vai te diferenciar como um profissional de dados.
 
 **O que é um banco relacional** ❓
 
@@ -110,21 +110,21 @@ A depender de sua arquitetura e finalidade, os dados armazenados podem ser acess
 
 O modelo relacional armazena dados estruturados. Cada um dos campos é planejado antes, seja em relação ao nome da coluna (idade, por exemplo), o tipo de dados (numérico) e se o campo é obrigatório ou pode ficar em branco (nulo).
 
-Em um banco de dados relacional, caad linha na tabela é um registro com uma ID exclusiva chamada chave. As colunas da tabela contêm atributos dos dados e cada registro tem um único valor para cada um destes atributos, facilitando o estabelecimento das relações entre os pontos de dados.
+Em um banco de dados relacional, cada linha na tabela é um registro com uma ID exclusiva chamada chave. As colunas da tabela contêm atributos dos dados e cada registro tem um único valor para cada um destes atributos, facilitando o estabelecimento das relações entre os pontos de dados.
 
 Por exemplo, uma tabela que armazene os cursos oferecidos por nossa escola. Cada linha representa um curso e cada um deles deve receber uma chave única. Algo semelhante a estrutura abaixo poderia ser a tabela de cursos.
 
 <img src="./imagens/diagramaCursos.png">
 
-Esta primeira tabela tem os dados do curso, de forma que cada registro incluir o nome do curso, o professor e se o curso está ativo ou não. Cada um dos atributos recebe uma coluna específica e o banco de dados atribui uma ID única (uma chave) a cada linha.
+Esta primeira tabela tem os dados do curso, de forma que cada registro inclui o nome do curso, o professor e se o curso está ativo ou não. Cada um dos atributos recebe uma coluna específica e o banco de dados atribui uma ID única (uma chave) a cada linha.
 
 Uma segunda tabela, nosso cadastro de professores contém o nome, dados de contato e um ID exclusivo. 
 
 <img src="./imagens/diagramaProfessor.png">
 
-Estas duas tabelas têm uma coisa em comum, alguma sugestão ❓ 
+Agora reflita comigo. Estas duas tabelas têm alguma coisa em comum❓ 
 
-A coluna id_professor é um atributo das duas tabelas. Mas por causa dessa coluna em comum, o banco de dados relacional pode criar uma relação entre as duas tabelas. Dessa forma, quando nossa aplicação requistar o cadastro de um curso, através do código do professor, teremos acesso a suas informações de contato.
+A coluna id_professor é um atributo das duas tabelas. E através desta coluna em comum, o banco de dados relacional pode criar uma relação entre as duas tabelas. Dessa forma, quando nossa aplicação requistar o cadastro de um curso, através do código do professor, teremos acesso a suas informações de contato.
 
 O modelo relacional é o melhor em manter a consistência de dados. Por exemplo, quando um cliente deposita dinheiro em um caixa eletrônico e analisa o saldo da conta em um celular, o cliente espera ver esse depósito refletido imediatamente em um saldo atualizado da conta. Os bancos de dados relacionais se destacam nesse tipo de consistência de dados, garantindo que várias instâncias de um banco de dados tenham os mesmos dados o tempo todo.
 
