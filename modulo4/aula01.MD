@@ -31,7 +31,7 @@ Procure pelo MySQL Workbench na versão Community.
 
 Quando falamos de Banco de dados, precisamos voltar aos registros físicos de bibliotecas. Pense nos negócios em geral, registros policiais, fichas de pacientes, registros de estoque e também entradas e saídas de pessoas e materiais em um prédio ou pavilhão. Esse resgate é importante, pois foi lá que tudo começou.
 
-Estes registros eram individualizados, mantinha-se um histórico muito longo de informações e também uma metodologia de indexação e recuperação da informação quando se precisava dela. Mas não vamos nos alongar muito, mas fica o convite para quem quiser pesquisar mais sobre o assunto. 
+Estes registros eram individualizados, mantinha-se um histórico muito longo de informações e também uma metodologia de indexação e recuperação da informação quando se precisava dela. 
 
 Os Bancos de dados como conhecemos hoje, o modelo relacional, é uma teoria matemática desenvolvida por Edgar Frank Codd. Ele desceve como as bases de dados devem funcionar. E veja bem, estamos falando de de um período entre 1960-1970. 
 
