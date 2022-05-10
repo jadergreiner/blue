@@ -44,6 +44,24 @@ Até muito recentemente, os bancos de dados relacionais eram os modelos mais usa
 Como estudamos na aula 1, está bem difundido na comunidade quatro tipos de bancos não relacionais. Relembrando:
 - Orientado a chave valor, orientado a coluna, orientado a Grafos e orientado a documentos.
 
-Nesta aula, vamos aprofundar os conhecimentos no conceito de bancos orientados a documentos. O banco de dados não relacional mais conhecido e difundido na comunidade é o MongoDB. Justamente por ser orientado a documentos é que vamos utiliza-lo em nossa aula daqui para frente.
+Nesta aula, vamos aprofundar os conhecimentos no conceito de bancos orientados a documentos. 
+
+Um banco orientado a documentos é um tipo de banco projetado para armazenar dados semi-estruturados, geralmente, em formato JSON, XML ou YARN.
+
+Diferente dos bancos relacionais, o Schema de cada documento não relacional pode variar, o que nos oferece maior flexibilidade para organizar e armazenar dados, reduzir o armazenamento exigido para valores opcionais e maior agilidade na recuperação dos dados.
+
+**E qual a aplicação de um banco orientado a documentos ❓**
+
+Bancos relacionais geralmente armazenam dados em tabelas separadas. Um único objeto pode estar espalhado através de várias tabelas.
+
+<img src="https://i.stack.imgur.com/vDue4.jpg">
+
+Em um banco orientado a documentos, podemos armazenar todas as informações em um único objeto. Abaixo um exemplo no formato JSON:
+
+<img src = "./imagens/modeloJSON.png">
+
+O banco de dados não relacional mais conhecido e difundido na comunidade é o MongoDB. Justamente por ser orientado a documentos é que vamos utiliza-lo em nossa aula daqui para frente.
 
 <img src = "https://wallpapercave.com/wp/wp8725088.jpg">
+
+
