@@ -60,6 +60,22 @@ Em um banco orientado a documentos, podemos armazenar todas as informações em 
 
 <img src = "./imagens/modeloJSON.png">
 
+Os documentos armazenados são fortemente equivalentes ao conceito de objeto em programação. Eles não são obrigados a aderir a um esquema padrão, nem precisarão ter todas as mesmas seções, aberturas, partes ou chaves.
+
+Cada objeto, mesmo aqueles da mesma classe, podem parecer muito diferentes.
+
+Concluindo, como não é necessário definir nenhum esquema rígido antes de realmente usar o banco de dados, já que todos os dados e metadados estão no próprio documento, se for necessário incluir um novo campo, poderá inclui-lo sem afetar de forma adversa outros documentos do banco de dados. Além disto, os documentos não precisam armazenar os campos vazios.
+
+## Coleções e campos
+
+As coleções em bancos no NoSQL, de forma didática, podemos assimilar a tabelas de um banco relacional. Basicamente, a coleção é um agrupamentos de documentos.
+
+Os documentos dentro de uma coleção podem ter diferentes campos. Um banco de dados possui uma ou mais coleções.
+
+<img src = "./imagens/MapaMental.png">
+
+Os campos de um documento, como tratamos em nosso módulo, são os dados contidos no documento. Diferente dos bancos relacionais, não possuem uma Schema pré-definido.
+
 O banco de dados não relacional mais conhecido e difundido na comunidade é o MongoDB. Justamente por ser orientado a documentos é que vamos utiliza-lo em nossa aula daqui para frente.
 
 <img src = "https://wallpapercave.com/wp/wp8725088.jpg">
