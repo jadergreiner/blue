@@ -40,3 +40,10 @@ Por outro lado, em bancos de dados NoSQL, os dados podem ser armazenados sem def
 Até muito recentemente, os bancos de dados relacionais eram os modelos mais usados. Eles ainda são extremamente onipresentes em muitas empresas; no entanto, a variedade, velocidade e volume de dados que estão sendo acessados hoje às vezes requerem um banco de dados muito diferente para complementar o banco de dados relacional. Isso desencadeou a adoção em algumas áreas dos bancos de dados NoSQL—também chamados de "bancos de dados não relacionais". 
 
 ## Conceitos de banco de documentos
+
+Como estudamos na aula 1, está bem difundido na comunidade quatro tipos de bancos não relacionais. Relembrando:
+- Orientado a chave valor, orientado a coluna, orientado a Grafos e orientado a documentos.
+
+Nesta aula, vamos aprofundar os conhecimentos no conceito de bancos orientados a documentos. O banco de dados não relacional mais conhecido e difundido na comunidade é o MongoDB. Justamente por ser orientado a documentos é que vamos utiliza-lo em nossa aula daqui para frente.
+
+<img src = "https://wallpapercave.com/wp/wp8725088.jpg">
