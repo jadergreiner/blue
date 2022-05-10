@@ -80,4 +80,23 @@ O banco de dados não relacional mais conhecido e difundido na comunidade é o M
 
 <img src = "https://wallpapercave.com/wp/wp8725088.jpg">
 
+## MongoDB
+
+MongoDB é um software de banco de dados orientado a documentos livre, de código aberto e multiplataforma, escrito na linguagem C++. Classificado como um programa de banco de dados NoSQL, o MongoDB usa documentos semelhantes a JSON com esquemas. É desenvolvido pela MongoDB Inc.
+
+Suas características permitem com que as aplicações modelem informações de modo muito mais natural, pois os dados podem ser aninhados em hierarquias complexas e continuar a ser indexáveis e fáceis de buscar.
+
+O desenvolvimento de MongoDB começou em outubro de 2007 pela 10gen, atual MongoDB Inc., e sua primeira versão pública foi lançada em fevereiro de 2009.
+
+Curiosidade, em 20 de outubro de 2017, MongoDB se tornou uma empresa pública, listada no NASDAQ como MDB.
+
+O MongoDB é o mais popular banco de dados NoSQL, utilizamento mundialmente por grandes empresas e projetos.
+
+Segue o link da documentação oficial, incluindo a instalação. 
+Obs: O MongoDB possui a versão Online, caso optem por não realizar a instalação. 
+
+https://www.mongodb.com/docs/guides/server/install/
+
+Segue um vídeo explicativo da instalação em Windows
+https://www.youtube.com/watch?v=N1RBcp74pi0
 
