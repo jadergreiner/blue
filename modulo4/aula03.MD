@@ -56,6 +56,10 @@ Neste exemplo, temos um campo "Name" e o valor "Ada Comptom".
 
 <img src="https://blog.debugeverything.com/wp-content/uploads/2021/04/MongoDB-colecao.jpg">
 
+Analisaremos mais de perto documentos e suas estruturas assim que colocarmos as mãos em um conjunto de dados real.
+
+Mas, por enquanto, este é um exemplo simples de um documento.
+
 
 Diferente dos bancos relacionais, o Schema de cada documento não relacional pode variar, o que nos oferece maior flexibilidade para organizar e armazenar dados, reduzir o armazenamento exigido para valores opcionais e maior agilidade na recuperação dos dados.
 
