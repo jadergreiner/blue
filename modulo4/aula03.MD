@@ -12,7 +12,9 @@
 
 5. MongoDB: Como funciona
 
-6. MongoDB: Select e filtros
+6. MongoDB: Criando Database e collections
+
+7. MongoDB: Select e filtros
  
 
 ## Bancos NoSQL: Diferenças dos bancos relacionais
@@ -47,6 +49,13 @@ Como estudamos na aula 1, está bem difundido na comunidade quatro tipos de banc
 Nesta aula, vamos aprofundar os conhecimentos no conceito de bancos orientados a documentos. 
 
 Um banco orientado a documentos é um tipo de banco projetado para armazenar dados semi-estruturados, geralmente, em formato JSON, XML ou YARN.
+
+Um documento é uma maneira de organizar e armazenar dados como um conjunto de pares de valor de campo. Assim, onde o campo é um identificador único para algum ponto de dados, e o valor são dados relacionados a um determinado identificador.
+
+Neste exemplo, temos um campo "Name" e o valor "Ada Comptom".
+
+<img src="https://blog.debugeverything.com/wp-content/uploads/2021/04/MongoDB-colecao.jpg">
+
 
 Diferente dos bancos relacionais, o Schema de cada documento não relacional pode variar, o que nos oferece maior flexibilidade para organizar e armazenar dados, reduzir o armazenamento exigido para valores opcionais e maior agilidade na recuperação dos dados.
 
@@ -93,11 +102,37 @@ Curiosidade, em 20 de outubro de 2017, MongoDB se tornou uma empresa pública, l
 O MongoDB é o mais popular banco de dados NoSQL, utilizamento mundialmente por grandes empresas e projetos.
 
 Segue o link da documentação oficial, incluindo a instalação. 
-Obs: O MongoDB possui a versão Online, caso optem por não realizar a instalação. 
+Obs: O MongoDB possui a versão Online, caso optem por não realizar a instalação. Para usar a versão On-Line, crie uma conta na Atlas.
+
+<img src = "./imagens/ContaAtlas.png">
 
 https://www.mongodb.com/docs/guides/server/install/
 
 Segue um vídeo explicativo da instalação em Windows
 
 https://www.youtube.com/watch?v=N1RBcp74pi0
+
+
+## MongoDB: Como funciona
+
+É um banco de dados com escalabilidade e flexibilidadeO MongoDB, trabalha com o conceito de documentos através de consultas e indexação dos dados.
+
+Por DEFAULT, o MongoDB não exige um Schema, mas saiba que em tópicos mais avançados, pode ser feito uma modelagem dos dados, caso o projeto assim exiga.
+
+MongoDB armazena dados em documentos do tipo JSON flexíveis, o que significa que os campos podem variar de documento para documento e a estrutura de dados pode ser alterada ao longo do tempo.
+
+Consultas ad hoc, indexação e agregação em tempo real fornecem maneiras poderosas de acessar e analisar seus dados.
+
+MongoDB é um banco de dados distribuído em seu núcleo, de modo que a alta disponibilidade, a escala horizontal e a distribuição geográfica são incorporadas e fáceis de usar.
+
+MongoDB é gratuito. As versões publicadas antes de 16 de outubro de 2018 são publicadas sob a AGPL. Todas as versões lançadas após 16 de outubro de 2018, incluindo correções de remendos para versões anteriores, são publicadas sob a Licença Pública do Lado do Servidor (SSPL) v1.
+
+
+
+## MongoDB: Criando Database e collections
+
+
+
+## MongoDB: Select e filtros
+
 
