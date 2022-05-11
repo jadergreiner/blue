@@ -106,9 +106,7 @@ Curiosidade, em 20 de outubro de 2017, MongoDB se tornou uma empresa pública, l
 O MongoDB é o mais popular banco de dados NoSQL, utilizamento mundialmente por grandes empresas e projetos.
 
 Segue o link da documentação oficial, incluindo a instalação. 
-Obs: O MongoDB possui a versão Online, caso optem por não realizar a instalação. Para usar a versão On-Line, crie uma conta na Atlas.
-
-<img src = "./imagens/ContaAtlas.png">
+Obs: O MongoDB possui a versão Online, caso optem por não realizar a instalação. O curso será abordado na versão Desktop, para simplificar. 
 
 https://www.mongodb.com/docs/guides/server/install/
 
@@ -132,9 +130,25 @@ MongoDB é um banco de dados distribuído em seu núcleo, de modo que a alta dis
 MongoDB é gratuito. As versões publicadas antes de 16 de outubro de 2018 são publicadas sob a AGPL. Todas as versões lançadas após 16 de outubro de 2018, incluindo correções de remendos para versões anteriores, são publicadas sob a Licença Pública do Lado do Servidor (SSPL) v1.
 
 
-
 ## MongoDB: Criando Database e collections
 
+Seguindo a instalação local do MongoDB, você deve ter instalado uma plataforma gráfica chamada **MongoDB Compass**.
+
+Ao abrir faça a conexão e vamos começar realizar nossos primeiros comandos.
+
+Vamos começar criando um Database. Vou usar o nome de **Blue**. Já vou aproveitar e criar nossa primeira collection com o nome de **cursos**.
+
+Após criar nosso database e nossa collection, no Menu a esquerda já estará disponível para trabalharmos.
+
+Vou inserir meu primeiro documento, para isto, clique em **""ADD DATA""** >> Insert Document.
+
+<img src = "./imagens/dataBase.png">
+
+Será aberto a tela de formatação para inclusão do documento.
+
+<img src = "./imagens/primeiroDocumento.png">
+
+Muito bom! Criamos nossa estrutura básica. Documento, collection e Database. Seguiremos criando novos documentos para avançarmos a parte final de filtros e agregações.
 
 
 ## MongoDB: Select e filtros
