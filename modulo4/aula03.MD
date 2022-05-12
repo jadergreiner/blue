@@ -208,8 +208,33 @@ Para inserir um novo documento, a sintaxe básica é esta:
  Agora vamos adicionar dados de alguns cursos para depois trabalharmos na filtragem dos dados.
  
  <code>
-  db.cursos.insertMany([{"nome" : "Backend","disciplinas" : ["NodeJS","Express","NestJS"],"carga horaria" : 200},{"nome": "Frontend","disciplinas" : ["ReactJS","NextJS"],"carga horaria" : 180},{"nome": "Full Stack","disciplinas" :["HTML5, CSS3 e JavaScript","NodeJS",	"Express e NestJS","ReactJS",],"carga horaria": 380},{"nome" : "Ciência de dados","disciplinas" : ["R e Python","Anaconda e Jupyter Notebook","Pandas"],"carga horaria" : 300}]);
+  db.cursos.insertMany([{"nome" : "Backend","disciplinas" : ["NodeJS","Express","NestJS"],"carga_horaria" : 200},{"nome": "Frontend","disciplinas" : ["ReactJS","NextJS"],"carga_horaria" : 180},{"nome": "Full Stack","disciplinas" :["HTML5, CSS3 e JavaScript","NodeJS",	"Express e NestJS","ReactJS",],"carga_horaria": 380},{"nome" : "Ciência de dados","disciplinas" : ["R e Python","Anaconda e Jupyter Notebook","Pandas"],"carga_horaria" : 300}]);
+ </code>
+ 
+ Vamos fazer um find para ter uma visão geral de nossos documentos.
+ 
+<code>
+  db.exemplo.find({});
+ </code>
+ 
+ Com excessão ao ID, que para você deve estar com outro número, a estrutura deve estar semelhante e esta.
+ <img src = "./imagens/find.png">
+ 
+ Vamos retornar apenas o nome dos cursos.
+ 
+ <code>
+  db.cursos.find({},{_id : 0, nome:1});
+ </code>
+ 
+ Veja se passamos dois parâmetros. A primeira chave é nosso filtro, neste caso, em branco(retorna tudo). O segundo parâmetro, podemos personalizar cada campo que vamos exibir atribuindo "0" ou "1". Sendo que "1" exibe e "0" não exibe.
+ 
+ A partir do momento que eu adiciono um campo como "1", automaticamente o MongoDB atribui "0" aos demais, com excessão do "_id" que precisa ser expressamente ocultado.
+ 
+ Agora vamos mostrar o nome e a carga horária.
+ 
+ <code>
+ db.cursos.find({},{_id : 0, carga_horaria:1, nome:1});
  </code>
  
  
-
+ 
