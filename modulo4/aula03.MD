@@ -152,7 +152,7 @@ Muito bom! Criamos nossa estrutura básica. Documento, collection e Database. Ag
 
 Se você realizou os passos do vídeo de instalação que deixamos acima, está diponível o Shell do Mongo. 
 
-Abra o prompt e digite <code>mongosh</code>. Deve ser exibido uma tela semelhanete a esta no seu prompt. Depois digite <code>show dbs</code> para listar os Databases. Configura se o Database que criamos anteriormente está disponível.
+Abra o prompt e digite <code>mongosh</code>. Deve ser exibido uma tela semelhante a esta no seu prompt. Depois digite <code>show dbs</code> para listar os Databases. Já confira se o Database que criamos anteriormente está disponível.
 
 <img src = "./imagens/mongo.png">
 
@@ -162,7 +162,7 @@ Para verificar as collections, digite <code>show collections</code>.
 
 Para inserir um novo documento, a sintaxe básica é esta:
 
-<code> db.nomecollection.insertOne({documento});
+<code> db.nomecollection.insertOne({documento}); </code>
  
  Vamos adicionar um exemplo.
  
@@ -179,7 +179,7 @@ Para inserir um novo documento, a sintaxe básica é esta:
  
  Vamos dar um <code>show collections</code> novamente. 
  
- Veja que agora temos uma nova collections chamada exemplo. Esta é outra característica e diferencial dos bancos NoSQL, diferente de um banco relacional, que precisamos modelar a tabela antes de adicionar informações, veja que o própio MongoDB se encarregou de criar a colletion para armazenar os nossos documentos.
+ Veja que agora temos uma nova collections chamada exemplo. Esta é outra característica e diferencial dos bancos NoSQL. Diferente de um banco relacional, que precisamos modelar a tabela antes de adicionar informações, veja que o própio MongoDB se encarregou de criar a colletion para armazenar os nossos documentos.
  
  Vamos recuperar nossos documentos.
  <code>
@@ -218,6 +218,7 @@ Para inserir um novo documento, a sintaxe básica é esta:
  </code>
  
  Com excessão ao ID, que para você deve estar com outro número, a estrutura deve estar semelhante e esta.
+ 
  <img src = "./imagens/find.png">
  
  Vamos retornar apenas o nome dos cursos.
@@ -225,6 +226,8 @@ Para inserir um novo documento, a sintaxe básica é esta:
  <code>
   db.cursos.find({},{_id : 0, nome:1});
  </code>
+ 
+ <img src = "./imagens/nomeCurso.png">
  
  Repare que passamos dois parâmetros. A primeira chave é nosso filtro, neste caso, em branco(retorna tudo). O segundo parâmetro, podemos personalizar cada campo que vamos exibir atribuindo "0" ou "1". Sendo que "1" exibe e "0" não exibe.
  
@@ -236,17 +239,23 @@ Para inserir um novo documento, a sintaxe básica é esta:
  db.cursos.find({},{_id : 0, carga_horaria:1, nome:1});
  </code>
  
+ <img src = "./imagens/nomeCargaHoraria.png">
+ 
   E se quisermos atualizar alguma informação de nosso documento? Podemos usar o update
  
  <code>
   db.cursos.updateOne({"nome":"Full Stack"}, {$set: {"carga_horaria" : 450}});
  </code>
  
+ <img src = "./imagens/updateMongo.png">
+ 
  Agora vamos retornar os cursos com carga horária a partir de 300 horas.
  
  <code>
    db.cursos.find({"carga_horaria": {$gte: 300}});
  </code>
+ 
+ <img src = "./imagens/curso300.png">
  
  
  Entendeu a diferença? Neste exemplo, passei o primeiro parâmetro, que filtra os dados, ou seja, apenas a carga horária de 300 horas ou mais. No exemplo anterior, eu não fiz nenhum filtro, mas selecionei as informações que iria exibir.
@@ -257,11 +266,15 @@ Para inserir um novo documento, a sintaxe básica é esta:
   db.cursos.find({"carga_horaria": {$gte: 300}},{_id : 0, nome : 1, disciplinas : 1} );
  </code>
  
+ <img src = "./imagens/mergeFiltro.png">
+ 
  Poderíamos melhorar nossa consulta. E se quisermos ordenar em ordem alfabética pelo nome do curso?
  
  <code>
   db.cursos.find({"carga_horaria": {$gte: 300}},{_id : 0, nome : 1, disciplinas : 1}).sort({"carga_horaria":1});
  </code>
+ 
+ <img src = "./imagens/orderNome.png">
  
  Basicamente, adicinar o "sort()" ao final do script anterior.
  
