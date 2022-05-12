@@ -11,12 +11,31 @@ Exercícios
 3. Faça seleções, filtros e atualizações de dados para praticar. Guarde estas consultas e salve em arquivos (pode ser em .txt);
 4. Referente a atividade 3, quando for aplicável, guarde em arquivos as consultas SQL e o script Mongo;
 5. Crie um database de modo que atenda a planilha abaixo e responda algumas perguntas de negócio.
+
   a) Salve estes dados em uma collection;
+  
   b) Faça um filtro para cada Região;
+  
   c) Faça uma ordenação por Nome do Estado;
+  
   d) Faça uma ordenação por população;
   
-6. 
-  
-
 <img src = "./imagens/tabelaPopulacao.png">
+
+6. Para o próximo desafio, veja o código abaixo.
+
+<code> 
+db.exemplos.insertMany([{"num" : 1},{"num" : 2}, {"num" : 3}, {"num" : 4}, {"num" : 5} ]);
+  
+db.exemplos.find({}).limit(3);
+</code>
+
+  a) Seu desafio será retornar os 5 estados com a maior população e depois os 5 com a menor população.
+  
+  b) Agora mostre uma lista com os 2 estados com maior população em cada região;
+  
+O print a seguir pode te dar uma ideia. 
+
+<img src = "./imagens/modeloCodeLab.png">
+
+
