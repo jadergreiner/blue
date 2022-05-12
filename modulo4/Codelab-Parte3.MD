@@ -1,23 +1,14 @@
-Aula ?? - [CODELAB] SQL - Parte 1
+Aula ?? - [CODELAB] MongoDB - Parte 1
 
 Vamos colocar em prática o aprendizado? Bom laboratório.
 
-inicialmente, conseguiram instalar o MySQL Workbench? Caso tenham enfrentado alguma dificuldade, aproveitem este espaço com os professores e colegas para deixar seu ambiente preparado. Vamos precisar dele para as próximas aulas.
+Vamos deixar uma primeira parte para revisão. Se for o primeiro contato de algumas pessoas com documents e bancos não relacionais, muitas dúvidas podem ter surgido. Aproveitamos também para revisar instalações e erros que possam ter surgido durante a aula. 
 
 Exercícios
 
-Nesta primeira parte do CodeLab, gostaria que pesquizasse um pouco mais sobre Bancos Relacionais e não relacionais para responder as perguntas abaixo. 
-Obs: Veja a sessão de conteúdos complementares.
+1. Inicialmente, gostaria que visitassem o exercício da primeira CodeLab. Lembram da modelagem? A proposta é replicar no MongoDB, mas detalhe. No banco relacional você normalizou entre várias tabelas, nosso desafio é criar uma collection para uma entidade e deixar os dados dentro um único documento. 
 
-1. Explique com suas palavras quais as diferenças entre um Banco de Dados relacional e um banco de dados não relacional;
-2. Dois tipos de aplicação de bancos relacionais e dois tipos de aplicação de bancos não relacionais;
-3. Pesquisando um pouco mais, conseguiria listrar algumas vantagens x desvantagens entre um modelo ou outro?
-4. Sobre modelagem de dados, gostaria de ver um modelo simples para **um dos casos abaixo**. Nesta atividade, pode usar um editor simples como Word-Power Point, até mesmo modelos mais profissionais, como por exemplo (https://diagrams.net/) e ainda a própria modelagem do WorkBench. Gostaria de ver os três modelos, lembra deles (Conceitual, lógico e físico). 
-  a) Academia
-  b) Banco
-  c) Loja de vendas Online
-  d) Escola
-  e) Concessionária
+abaixo é do outro codelab
 5. Com a modelagem pronta, vamos a prática. Crie seu banco de dados e as tabelas, conforme a sua modelagem;
 6. Insira dados nas tabelas;
 7. Atualize estes dados;
