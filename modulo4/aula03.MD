@@ -236,11 +236,18 @@ Para inserir um novo documento, a sintaxe básica é esta:
  db.cursos.find({},{_id : 0, carga_horaria:1, nome:1});
  </code>
  
+  E se quisermos atualizar alguma informação de nosso documento? Podemos usar o update
+ 
+ <code>
+  db.cursos.updateOne({"nome":"Full Stack"}, {$set: {"carga_horaria" : 450}});
+ </code>
+ 
  Agora vamos retornar os cursos com carga horária a partir de 300 horas.
  
  <code>
    db.cursos.find({"carga_horaria": {$gte: 300}});
  </code>
+ 
  
  Entendeu a diferença? Neste exemplo, passei o primeiro parâmetro, que filtra os dados, ou seja, apenas a carga horária de 300 horas ou mais. No exemplo anterior, eu não fiz nenhum filtro, mas selecionei as informações que iria exibir.
  
