@@ -226,7 +226,7 @@ Para inserir um novo documento, a sintaxe básica é esta:
   db.cursos.find({},{_id : 0, nome:1});
  </code>
  
- Veja se passamos dois parâmetros. A primeira chave é nosso filtro, neste caso, em branco(retorna tudo). O segundo parâmetro, podemos personalizar cada campo que vamos exibir atribuindo "0" ou "1". Sendo que "1" exibe e "0" não exibe.
+ Repare que passamos dois parâmetros. A primeira chave é nosso filtro, neste caso, em branco(retorna tudo). O segundo parâmetro, podemos personalizar cada campo que vamos exibir atribuindo "0" ou "1". Sendo que "1" exibe e "0" não exibe.
  
  A partir do momento que eu adiciono um campo como "1", automaticamente o MongoDB atribui "0" aos demais, com excessão do "_id" que precisa ser expressamente ocultado.
  
@@ -236,5 +236,34 @@ Para inserir um novo documento, a sintaxe básica é esta:
  db.cursos.find({},{_id : 0, carga_horaria:1, nome:1});
  </code>
  
+ Agora vamos retornar os cursos com carga horária a partir de 300 horas.
+ 
+ <code>
+   db.cursos.find({"carga_horaria": {$gte: 300}});
+ </code>
+ 
+ Entendeu a diferença? Neste exemplo, passei o primeiro parâmetro, que filtra os dados, ou seja, apenas a carga horária de 300 horas ou mais. No exemplo anterior, eu não fiz nenhum filtro, mas selecionei as informações que iria exibir.
+ 
+ Vou fazer um merge agora destes dois parâmetros. Vamos retornar este mesmo filtro, ou seja, cursos com carga horária de 300 horas ou mais, porém, quero exibir o nome do curso e quais as disciplinas.
+ 
+ <code>
+  db.cursos.find({"carga_horaria": {$gte: 300}},{_id : 0, nome : 1, disciplinas : 1} );
+ </code>
+ 
+ Poderíamos melhorar nossa consulta. E se quisermos ordenar em ordem alfabética pelo nome do curso?
+ 
+ <code>
+  db.cursos.find({"carga_horaria": {$gte: 300}},{_id : 0, nome : 1, disciplinas : 1}).sort({"carga_horaria":1});
+ </code>
+ 
+ Basicamente, adicinar o "sort()" ao final do script anterior.
+ 
+ Chegamos ao fim de nossaa aula, passamos pelos conceitos principais do MongoDB, como instalação, criar e consultar Databases e collections, inserção e manipulação de documentos e por fim trabalhamos tanto na seleção dos campos bem como na filtragem dos dados.
+ 
+ Com certeza teríamos muito mais a abordar, mas a nossa proposta é te dar esta visão de um Banco NoSQL para que possa comparar difenciar aos bancos relacionais que vimos nas aulas anteriores.
+ 
+ Finalizo com a documentação oficial, com uma série de comandos e possibilidades e até nosso CodLab!
+ 
+ https://www.mongodb.com/docs/manual/crud/
  
  
