@@ -110,7 +110,7 @@ Obs: O MongoDB possui a versão Online, caso optem por não realizar a instalaç
 
 https://www.mongodb.com/docs/guides/server/install/
 
-Segue um vídeo explicativo da instalação em Windows
+Segue um vídeo explicativo da instalação em Windows do MongoDB e do MongoDB Shel.
 
 https://www.youtube.com/watch?v=N1RBcp74pi0
 
@@ -148,8 +148,13 @@ Será aberto a tela de formatação para inclusão do documento.
 
 <img src = "./imagens/primeiroDocumento.png">
 
-Muito bom! Criamos nossa estrutura básica. Documento, collection e Database. Seguiremos criando novos documentos para avançarmos a parte final de filtros e agregações.
+Muito bom! Criamos nossa estrutura básica. Documento, collection e Database. Agora seguiremos para a execução em linha de comando, para isso, vamos abrir o MongoDB Shell. 
 
+Se você realizou os passos do vídeo de instalação que deixamos acima, está diponível o Shell do Mongo. 
+
+Abra o prompt e digite <code>mongosh</code>
+
+<img src = "./imagens/mongosh.png">
 
 ## MongoDB: Select e filtros
 
