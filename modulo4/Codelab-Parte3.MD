@@ -11,3 +11,12 @@ Exercícios
 3. Faça seleções, filtros e atualizações de dados para praticar. Guarde estas consultas e salve em arquivos (pode ser em .txt);
 4. Referente a atividade 3, quando for aplicável, guarde em arquivos as consultas SQL e o script Mongo;
 5. Crie um database de modo que atenda a planilha abaixo e responda algumas perguntas de negócio.
+  a) Salve estes dados em uma collection;
+  b) Faça um filtro para cada Região;
+  c) Faça uma ordenação por Nome do Estado;
+  d) Faça uma ordenação por população;
+  
+6. 
+  
+
+<img src = "./imagens/tabelaPopulacao.png">
