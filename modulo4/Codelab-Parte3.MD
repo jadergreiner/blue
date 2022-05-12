@@ -6,11 +6,8 @@ Vamos deixar uma primeira parte para revisão. Se for o primeiro contato de algu
 
 Exercícios
 
-1. Inicialmente, gostaria que visitassem o exercício da primeira CodeLab. Lembram da modelagem? A proposta é replicar no MongoDB, mas detalhe. No banco relacional você normalizou entre várias tabelas, nosso desafio é criar uma collection para uma entidade e deixar os dados dentro um único documento. 
-
-abaixo é do outro codelab
-5. Com a modelagem pronta, vamos a prática. Crie seu banco de dados e as tabelas, conforme a sua modelagem;
-6. Insira dados nas tabelas;
-7. Atualize estes dados;
-8. Faça a remoção de alguns dados;
-9. Salve todos os comandos em ar arquivo de texto e envie ao professor junto com a sua modelagem.
+1. Inicialmente, gostaria que visitassem o exercício da primeira CodeLab. Lembram da modelagem? A proposta é replicar no MongoDB, mas detalhe. No banco relacional você normalizou entre várias tabelas, nosso desafio é criar uma collection para uma entidade e deixar os dados dentro um único documento;
+2. Gere consultas no MongoDB semelhantes as querys do SQL e compare os scripts;
+3. Faça seleções, filtros e atualizações de dados para praticar. Guarde estas consultas e salve em arquivos (pode ser em .txt);
+4. Referente a atividade 3, quando for aplicável, guarde em arquivos as consultas SQL e o script Mongo;
+5. Crie um database de modo que atenda a planilha abaixo e responda algumas perguntas de negócio.
