@@ -154,8 +154,62 @@ Se você realizou os passos do vídeo de instalação que deixamos acima, está 
 
 Abra o prompt e digite <code>mongosh</code>. Deve ser exibido uma tela semelhanete a esta no seu prompt. Depois digite <code>show dbs</code> para listar os Databases. Configura se o Database que criamos anteriormente está disponível.
 
-<img src = "./imagens/mongosh.png">
+<img src = "./imagens/mongo.png">
 
+Vamos trabalhar em nosso Database, para isso digite <code> use blue</code>
+
+Para verificar as collections, digite <code>show collections</code>.
+
+Para inserir um novo documento, a sintaxe básica é esta:
+
+<code> db.nomecollection.insertOne({documento});
+ 
+ Vamos adicionar um exemplo.
+ 
+ <code>
+  db.exemplo.insertOne({"nome banco": "Mongo DB", "tipo": "NoSQL"});
+ </code>
+ 
+ 
+ Agora vou adicionar outro.
+ 
+ <code>
+  db.exemplo.insertOne({"nome banco": "SQL", "tipo": "relacional"});
+ </code>
+ 
+ Vamos dar um <code>show collections</code> novamente. 
+ 
+ Veja que agora temos uma nova collections chamada exemplo. Esta é outra característica e diferencial dos bancos NoSQL, diferente de um banco relacional, que precisamos modelar a tabela antes de adicionar informações, veja que o própio MongoDB se encarregou de criar a colletion para armazenar os nossos documentos.
+ 
+ Vamos recuperar nossos documentos.
+ <code>
+  db.exemplo.find({});
+ </code>
+ 
+ E se adicionarmos uma nova informação ao documento, será que vamos quebrar a collection? Vamos testar.
+ 
+ <code>
+  db.exemplo.insertOne({"nome banco": "PostgreeSQL", "tipo" : "relacional", "projeto": "codigo aberto"});
+ </code>
+
+ Recupe os documentos novamente com o find e veja que está tudo bem. Muito legal esta flexibilidade e adaptabilidade do MongoDB.
+ 
 ## MongoDB: Select e filtros
 
+ Vamos tratar sobre os filtros do MongoDB, mas antes disso, vamos adicionar um volume de documentos em nosso collection de cursos.
+ Abaixo tenho uma sugestão, mas gostaria que adaptasse para que possa praticar também.
+ 
+ Vou começar apagando o documento teste que incluimos no começo da Aula no Compass. Usaremos um comando equivalente ao DROP TABLE, que apaga todos os registros da collection.
+ 
+ <code>
+   db.cursos.deleteMany({});
+ </code>
+ 
+ Agora vamos adicionar dados de alguns cursos para depois trabalharmos na filtragem dos dados.
+ 
+ <code>
+  db.cursos.insertMany([{"nome" : "Backend","disciplinas" : ["NodeJS","Express","NestJS"],"carga horaria" : 200},{"nome": "Frontend","disciplinas" : ["ReactJS","NextJS"],"carga horaria" : 180},{"nome": "Full Stack","disciplinas" :["HTML5, CSS3 e JavaScript","NodeJS",	"Express e NestJS","ReactJS",],"carga horaria": 380},{"nome" : "Ciência de dados","disciplinas" : ["R e Python","Anaconda e Jupyter Notebook","Pandas"],"carga horaria" : 300}]);
+ </code>
+ 
+ 
 
