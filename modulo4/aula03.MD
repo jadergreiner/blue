@@ -152,7 +152,7 @@ Muito bom! Criamos nossa estrutura básica. Documento, collection e Database. Ag
 
 Se você realizou os passos do vídeo de instalação que deixamos acima, está diponível o Shell do Mongo. 
 
-Abra o prompt e digite <code>mongosh</code>
+Abra o prompt e digite <code>mongosh</code>. Deve ser exibido uma tela semelhanete a esta no seu prompt. Depois digite <code>show dbs</code> para listar os Databases. Configura se o Database que criamos anteriormente está disponível.
 
 <img src = "./imagens/mongosh.png">
 
